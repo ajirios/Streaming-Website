@@ -1,5 +1,5 @@
 
 
-# https://chillonline.net
+# http://chillonline.net
 
-A networking website for accessing Portable Native Client(pNaCl) Streaming Applications
+A web service for accessing channels streaming with Pepper via Portable Native Client(pNaCl).
