@@ -1,1 +1,0 @@
-# pepper-47-stub
