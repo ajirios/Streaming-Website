@@ -11,6 +11,11 @@
   header
   {
     background-color: #FFF;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#bababa));
+   background: -webkit-linear-gradient(top, #ffffff, #bababa);
+   background: -moz-linear-gradient(top, #ffffff, #bababa);
+   background: -ms-linear-gradient(top, #ffffff, #bababa);
+   background: -o-linear-gradient(top, #ffffff, #bababa);
     margin-left: 0;
     margin-right: 0;
     margin-top: 0;
@@ -68,13 +73,23 @@
   .sept
   {
     background-color: #FFF;
-    margin-left: 0;
     margin-right: 0;
     margin-top: 0;
-    height: 500px;
+    margin-left: 500px;
+    height: 505px;
     color: #000;
     opacity: 0.7;
     box-shadow: 0px 2px 5px #AAA;
+  }
+  
+  .sept2
+  {
+    background-color: #EEE;
+    margin-right: 0;
+    margin-top: 0;
+    margin-left: 500px;
+    height: 500px;
+    color: #000;
   }
   
   nav
@@ -82,6 +97,7 @@
   {
       
     margin-right: 50px;
+    float: left;
       
   }
   
@@ -114,18 +130,71 @@
       opacity: 1.0;
   }
   
-  button
-  {
-      border-radius: 8px;
-      font-family: sans-serif;
-      font-size: 9px;
-      color: #000;
-      text-shadow: 7px;
-      box-shadow: -8px;
-      padding: 2px;
-      margin: 3px;
-      width: 70px;
-  }
+  .button {
+   border-top: 1px solid #d4003c;
+   background: #780000;
+   background: -webkit-gradient(linear, left top, left bottom, from(#b00000), to(#780000));
+   background: -webkit-linear-gradient(top, #b00000, #780000);
+   background: -moz-linear-gradient(top, #b00000, #780000);
+   background: -ms-linear-gradient(top, #b00000, #780000);
+   background: -o-linear-gradient(top, #b00000, #780000);
+   padding: 7.5px 25px;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   border-radius: 5px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   font-size: 17px;
+   font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+.button:hover {
+   border-top-color: #c90000;
+   background: #c90000;
+   color: #f2efef;
+   }
+.button:active {
+   border-top-color: #a30a11;
+   background: #a30a11;
+   }
+   
+   .button2 {
+   border-top: 1px solid #55b506;
+   background: #2a4d02;
+   background: -webkit-gradient(linear, left top, left bottom, from(#539c00), to(#2a4d02));
+   background: -webkit-linear-gradient(top, #539c00, #2a4d02);
+   background: -moz-linear-gradient(top, #539c00, #2a4d02);
+   background: -ms-linear-gradient(top, #539c00, #2a4d02);
+   background: -o-linear-gradient(top, #539c00, #2a4d02);
+   padding: 7.5px 25px;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   border-radius: 5px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   font-size: 17px;
+   font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
+   text-decoration: none;
+   vertical-align: middle;
+   margin-right: 50px;
+   margin-top: 5px;
+   }
+.button2:hover {
+   border-top-color: #2c7d04;
+   background: #2c7d04;
+   color: #f2efef;
+   }
+.button2:active {
+   border-top-color: #a30a11;
+   background: #a30a11;
+   }
   
   .rimground
   {
@@ -161,6 +230,46 @@
       margin-left: 50px;
   }
   
+  #container
+  {
+      background-color: #FFF;
+      margin-left: 0;
+      margin-right: 0;
+      margin-top: 500px;
+      height: 300px;
+  }
+  
+  .space
+  {
+      width: 800px;
+      height: 50px;
+      float: left;
+      margin-top: 0;
+  }
+  
+  .divers
+  {
+      margin-left: 0;
+      margin-right: 0;
+      margin-top: 0;
+      height: 500px;
+  }
+  
+  .right
+  {
+      margin-left: 0;
+      margin-top: 0;
+      height: 500px;
+      width: 500px;
+      background-color: #87ceeb;
+      float: left;
+  }
+  
+  #epic
+  {
+      margin-left: 0px;
+  }
+  
   
 </style>
 
@@ -177,10 +286,11 @@
   <header>
       
     
-    <div class="nave">
+    <!--<div class="nave">-->
         
         <a href="index.html"><img class="bol" src="circle.png" alt="bol"></a>
-        
+        <div class="space"></div>
+        <!--
             <nav>
                 
                 <ul>
@@ -192,21 +302,45 @@
                 </ul>
                     
             </nav>
-    </div>
-      
+        -->
+        <button class="button2">Log In</button>
+        
+    <!--</div> -->
     <div class="sept">
         
         
+        
+    </div>  
+    
+    
+  </header>
+    
+    <div class="divers">
+    <div class="right">
         
         <form action="" method="post">
             
         </form>
     </div>
-    
-  </header>
+    <div class="sept2">
+        
+        <img src="epic.png" alt="epic" id="epic" width="1000">
+        <form action="" method="post">
+            
+        </form>
+    </div>
+    </div>
+  
+     <!--
+    <div id="container">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>-->
   
   
-  <img src="epic.png" alt="epic" id="epic">
   
   
   <img src="minion.png" alt="minion" id="minion">
