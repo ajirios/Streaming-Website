@@ -4,7 +4,7 @@
 <html lang="en"> 
 <head>
 <title>Home | Chill</title>
-<link rel="shortcut icon" type="image/png" href="circle2.png"/>
+<link rel="shortcut icon" type="image/png" href="circle.png"/>
 <meta charset="utf-8" /> 
 <style type="text/css">
   
@@ -30,6 +30,7 @@
   {
     margin: 0;
     background-color: #EEE;
+    font-family: sans-serif;
   }
   
   nav ul
@@ -48,6 +49,11 @@
   {
     display: block;
     background-color: #fff;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#bababa));
+    background: -webkit-linear-gradient(top, #ffffff, #bababa);
+    background: -moz-linear-gradient(top, #ffffff, #bababa);
+    background: -ms-linear-gradient(top, #ffffff, #bababa);
+    background: -o-linear-gradient(top, #ffffff, #bababa);
     opacity: 0.8;
     text-align: right;
     padding-top: 18px;
@@ -55,19 +61,19 @@
     padding-left: 30px;
     padding-right: 30px;
     text-decoration: none;
-    color: #f63;
+    color: #fff;
     font-family: /*"Josefin Slab", Arial, Helvetica, Pacifico, Rockwell,*/ sans-serif;
     font-size: 12px;
   }
 
   nav ul li a:hover, nav ul li a:active
   {
-    background-color: #fff;
+    //background-color: #fff;
     color: #f63;
     opacity: 1.0;
-    font-size: 20px;
-    padding-top: 13px;
-    padding-bottom: 13px;
+    //font-size: 20px;
+    //padding-top: 13px;
+    //padding-bottom: 13px;
   }
       
   .sept
@@ -96,7 +102,7 @@
   
   {
       
-    margin-right: 50px;
+    margin-right: 100px;
     float: left;
       
   }
@@ -180,10 +186,10 @@
    text-shadow: rgba(0,0,0,.4) 0 1px 0;
    color: white;
    font-size: 17px;
-   font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
+   font-family: Sans-Serif;
    text-decoration: none;
    vertical-align: middle;
-   margin-right: 50px;
+   margin-right: 0px;
    margin-top: 5px;
    }
 .button2:hover {
@@ -214,8 +220,8 @@
   
   .rimground:hover, .rimground:active
   {
-    width: 92px;
-    height: 142px;
+    //width: 92px;
+    //height: 142px;
     background-color: #555;
     border-radius: 0px;
     border-color: #FFF;
@@ -228,16 +234,46 @@
       float: left;
       margin-top: 5px;
       margin-left: 50px;
+      width: 30px;
   }
   
   #container
   {
-      background-color: #FFF;
-      margin-left: 0;
-      margin-right: 0;
-      margin-top: 500px;
-      height: 300px;
+      background-color: #fff;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 70px;
+      width: 1400px;
+      height: 1800px;
   }
+
+.moviediv
+{
+    margin: 25px auto 25px auto;
+    height: 300px;
+    background-color: #e63;
+}
+
+.seriediv
+{
+    margin: 25px auto 25px auto;
+    height: 300px;
+    background-color: #e63;
+}
+
+.musicdiv
+{
+    margin: 25px auto 25px auto;
+    height: 300px;
+    background-color: #e63;
+}
+
+.gamediv
+{
+    margin: 25px auto 25px auto;
+    height: 300px;
+    background-color: #e63;
+}
   
   .space
   {
@@ -261,9 +297,16 @@
       margin-top: 0;
       height: 500px;
       width: 500px;
-      background-color: #87ceeb;
+      background-color: /*#87ceeb*/ #e63;
       float: left;
   }
+
+.copyright
+{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
   
   #epic
   {
@@ -288,9 +331,9 @@
     
     <!--<div class="nave">-->
         
-        <a href="index.html"><img class="bol" src="circle.png" alt="bol"></a>
+        <a href="index.html"><img class="bol" src="circle2.png" alt="bol"></a>
         <div class="space"></div>
-        <!--
+        
             <nav>
                 
                 <ul>
@@ -302,7 +345,7 @@
                 </ul>
                     
             </nav>
-        -->
+        
         <button class="button2">Log In</button>
         
     <!--</div> -->
@@ -331,14 +374,15 @@
     </div>
     </div>
   
-     <!--
+  
     <div id="container">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>-->
+        <div class="copyright"><h2><br>Play series, movies, music, videos, and games for only $9.99/month.</h2>
+        <button class="button2">View Plan</button></div>
+        <div class="seriediv"></div>
+        <div class="moviediv"></div>
+        <div class="musicdiv"></div>
+        <div class="gamediv"></div>
+    </div>
   
   
   
@@ -347,7 +391,7 @@
   
   <footer>
     
-    
+    <div class="copyright"><p>&copy; 2016 Chill Computers.</p></div>
     
   </footer>
 
