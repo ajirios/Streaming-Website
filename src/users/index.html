@@ -7,9 +7,88 @@
         <style type="text/css">
             body
             {
+                margin: 0;
                 background-color: #e63;
                 font-family: sans-serif;
             }
+            
+  header
+  {
+    background-color: #FFF;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#bababa));
+   background: -webkit-linear-gradient(top, #ffffff, #bababa);
+   background: -moz-linear-gradient(top, #ffffff, #bababa);
+   background: -ms-linear-gradient(top, #ffffff, #bababa);
+   background: -o-linear-gradient(top, #ffffff, #bababa);
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    height: 50px;
+    color: #000;
+    opacity: 1.0;
+    box-shadow: 0px 2px 5px #AAA;
+    text-indent: 30px;
+  }
+  
+  .head
+  {
+      width: 90%;
+      height: 50px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 0;
+  }
+  
+  nav ul
+  {
+    list-style-type: none;
+    overflow: auto;
+    margin: 0;
+  }
+
+  nav ul li
+  {
+    float: right;
+  }
+
+  nav ul li a:link, nav ul li a:visited
+  {
+    display: block;
+    background-color: #fff;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#bababa));
+    background: -webkit-linear-gradient(top, #ffffff, #bababa);
+    background: -moz-linear-gradient(top, #ffffff, #bababa);
+    background: -ms-linear-gradient(top, #ffffff, #bababa);
+    background: -o-linear-gradient(top, #ffffff, #bababa);
+    opacity: 0.8;
+    text-align: right;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+    color: #fff;
+    font-family: /*"Josefin Slab", Arial, Helvetica, Pacifico, Rockwell,*/ sans-serif;
+    font-size: 12px;
+  }
+
+  nav ul li a:hover, nav ul li a:active
+  {
+    color: #e00;
+    opacity: 1.0;
+  }
+  
+  nav ul li a.current
+  {
+    color: #e00;
+  }
+  
+  nav
+  {
+      
+    float: right;
+      
+  }
             
             footer
   {
@@ -19,7 +98,7 @@
     margin-bottom: 0;
     height: 300px;
     box-shadow: 0px 2px 5px #AAA;
-    opacity: 0.7;
+    opacity: 1.0;
     margin-top: 0px;
     font-size: 12px;
   }
@@ -30,7 +109,7 @@
                 height: 300px;
                 margin: 100px auto 200px auto;
                 background-color: #fff;
-                opacity: 0.8;
+                opacity: 1.0;
             }
             
             .button2 {
@@ -67,6 +146,14 @@
    border-top-color: #2c7d04;
    background: #2c7d04;
    }
+   
+   .bol
+  {
+      float: left;
+      margin-top: 5px;
+      margin-left: 0px;
+      width: 30px;
+  }
    
    .titles
   {
@@ -148,8 +235,36 @@
   
             
         </style>
+        
+        
     </head>
     <body>
+        
+        <header>
+      
+    
+      <div class="head">
+        
+        <a href="../index.html"><img class="bol" src="../circle2.png" alt="bol"></a>
+        
+            <nav>
+                
+                <ul>
+                    <li><a href="../users/index.html" class="current">Users</a></li>
+                    <li><a href="../games/index.html">Games</a></li>
+                    <li><a href="../music/index.html" >Music</a></li>
+                    <li><a href="../music/index.html" >Videos</a></li>
+                    <li><a href="../movies/index.html" >Movies</a></li>
+                    <li><a href="../series/index.html" >Series</a></li>
+                    <li><a href="../channels/index.html">Channels</a></li>
+                </ul>
+                    
+            </nav>
+        
+      </div>
+    
+  </header>
+        
         <div class="block">
             <div class="logos">
                 
@@ -215,5 +330,3 @@
         
     </body>
 </html>
-
-
