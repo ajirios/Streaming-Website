@@ -9,7 +9,7 @@ A web service for chatting with friends and accessing multimedia streaming with 
 http://chillonline.net
 
 
-# Dependencies
+# Languages
 
 1. Java Server Pages (JSP)
 2. JavaScript
@@ -18,3 +18,9 @@ http://chillonline.net
 5. MySQL / MariaDB
 6. AJAX
 7. XML
+
+
+# Dependencies
+
+1. Google Chrome (latest version)
+2. Pepper 47 (Beta, Canary)
