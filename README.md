@@ -1,8 +1,12 @@
 
 
-# http://chillonline.net
+# Chill Online
 
-A web service for accessing channels streaming with Pepper via Portable Native Client(pNaCl) modules.
+A web service for accessing multimedia streaming with Pepper via Portable Native Client(pNaCl) modules.
+
+# Domain
+
+http://chillonline.net
 
 
 # Dependencies
