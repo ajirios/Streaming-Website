@@ -2,7 +2,7 @@
 
 # Chill Online
 
-A web service for chatting and accessing multimedia streaming with Pepper via Portable Native Client(pNaCl) modules.
+A web service for chatting with friends and accessing multimedia streaming with Pepper via Portable Native Client(pNaCl) modules.
 
 # Domain
 
