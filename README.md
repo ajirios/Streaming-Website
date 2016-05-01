@@ -2,11 +2,7 @@
 
 # Chill Online
 
-A web service for chatting with friends and accessing multimedia streaming with Pepper via Portable Native Client(pNaCl) modules.
-
-# Domain
-
-http://chillonline.net
+A web service for chatting with friends and accessing multimedia streaming with Pepper via Portable Native Client (pNaCl) modules.
 
 
 # Languages
@@ -24,3 +20,8 @@ http://chillonline.net
 
 1. Google Chrome (latest version)
 2. Pepper 47 (Beta, Canary)
+
+
+# Domain
+
+http://chillonline.net
