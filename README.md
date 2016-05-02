@@ -11,16 +11,15 @@ A web service for chatting with friends and accessing multimedia streaming with 
 2. JavaScript
 3. C++
 4. Pepper Plugin API (PPAPI)
-5. MySQL / MariaDB
+5. Makefile
 6. AJAX
 7. XML
-8. Makefile
 
 
 # Server Software
 
 1. Apache HTTP Server
-2. MariaDB / MySQL
+2. MySQL / MariaDB
 
 
 # Dependencies
