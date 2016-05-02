@@ -14,6 +14,7 @@ A web service for chatting with friends and accessing multimedia streaming with 
 5. MySQL / MariaDB
 6. AJAX
 7. XML
+8. Makefile
 
 
 # Server Software
