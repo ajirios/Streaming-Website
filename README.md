@@ -16,10 +16,16 @@ A web service for chatting with friends and accessing multimedia streaming with 
 7. XML
 
 
+# Server Software
+
+1. Apache HTTP Server
+2. MariaDB / MySQL
+
+
 # Dependencies
 
 1. Google Chrome (latest version)
-2. Pepper 47 (Beta, Canary)
+2. Pepper 47 (Post-Stable, Stable, Beta, Canary)
 
 
 # Domain
