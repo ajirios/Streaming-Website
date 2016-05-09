@@ -26,6 +26,15 @@
     text-indent: 30px;
   }
   
+  .head
+  {
+      width: 90%;
+      height: 50px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 0;
+  }
+  
   body
   {
     margin: 0;
@@ -37,14 +46,15 @@
   {
     list-style-type: none;
     overflow: auto;
-    margin: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
   }
-
   nav ul li
   {
     float: right;
   }
-
   nav ul li a:link, nav ul li a:visited
   {
     display: block;
@@ -58,22 +68,17 @@
     text-align: right;
     padding-top: 18px;
     padding-bottom: 18px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
     text-decoration: none;
     color: #fff;
     font-family: /*"Josefin Slab", Arial, Helvetica, Pacifico, Rockwell,*/ sans-serif;
     font-size: 12px;
   }
-
   nav ul li a:hover, nav ul li a:active
   {
-    //background-color: #fff;
-    color: #f63;
+    color: #e00;
     opacity: 1.0;
-    //font-size: 20px;
-    //padding-top: 13px;
-    //padding-bottom: 13px;
   }
       
   .sept
@@ -102,8 +107,8 @@
   
   {
       
-    margin-right: 100px;
-    float: left;
+    margin-right: 0px;
+    float: right;
       
   }
   
@@ -117,6 +122,7 @@
     box-shadow: 0px 2px 5px #AAA;
     opacity: 0.7;
     margin-top: -200px;
+    font-size: 12px;
   }
   
   .logos
@@ -217,23 +223,12 @@
     font-family: sans-serif;
     font-size: 10px;
   }
-  
-  .rimground:hover, .rimground:active
-  {
-    //width: 92px;
-    //height: 142px;
-    background-color: #555;
-    border-radius: 0px;
-    border-color: #FFF;
-    border-width: 4px;
-    border-style: solid;
-  }
     
   .bol
   {
       float: left;
       margin-top: 5px;
-      margin-left: 50px;
+      margin-left: 0px;
       width: 30px;
   }
   
@@ -243,46 +238,33 @@
       margin-left: auto;
       margin-right: auto;
       margin-top: 70px;
-      width: 1400px;
-      height: 1800px;
+      width: 90%;
+      height: 500px;
   }
-
 .moviediv
 {
     margin: 25px auto 25px auto;
     height: 300px;
     background-color: #e63;
 }
-
 .seriediv
 {
     margin: 25px auto 25px auto;
     height: 300px;
     background-color: #e63;
 }
-
 .musicdiv
 {
     margin: 25px auto 25px auto;
     height: 300px;
     background-color: #e63;
 }
-
 .gamediv
 {
     margin: 25px auto 25px auto;
     height: 300px;
     background-color: #e63;
 }
-  
-  .space
-  {
-      width: 800px;
-      height: 50px;
-      float: left;
-      margin-top: 0;
-  }
-  
   .divers
   {
       margin-left: 0;
@@ -294,18 +276,76 @@
   .right
   {
       margin-left: 0;
-      margin-top: 0;
+      margin-top: 0px;
       height: 500px;
       width: 500px;
-      background-color: /*#87ceeb*/ #e63;
+      background-color: #e63;
       float: left;
   }
-
+  
+  .createaccount
+  {
+      color: #FFF;
+      width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+  }
+  
+  .titles
+  {
+      width: 410px;
+      height: 300px;
+      margin-top: 20px;
+      margin-left: 90px;
+  }
+  
+  .names
+  {
+    width: 300px;
+    height: 30px;
+    padding: 4px;
+    margin: 5px 100px 5px auto;
+    border-radius: 10px;
+    font-size: 17px;
+  }
+  
+  .boxes
+  {
+      width: 200px;
+      height: 300px;
+      margin-top: 20px;
+      margin-left: 20px;
+      background-color: #e45;
+  }
 .copyright
 {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    width: 1000px;
+}
+.click-agreement
+{
+    color: #fff;
+    font-size: 9px;
+}
+.footnotes
+{
+    float: left;
+    font-size: 12px;
+    height: 230px;
+    width: 200px;
+    text-align: left;
+}
+.notes
+{
+    text-decoration: none;
+    color: #000;
+}
+.notes:hover
+{
+    color: #e63;
 }
   
   #epic
@@ -329,16 +369,17 @@
   <header>
       
     
-    <!--<div class="nave">-->
+      <div class="head">
         
         <a href="index.html"><img class="bol" src="circle2.png" alt="bol"></a>
-        <div class="space"></div>
         
             <nav>
                 
                 <ul>
+                    <li><a href="users/index.html" >Users</a></li>
                     <li><a href="games/index.html">Games</a></li>
                     <li><a href="music/index.html" >Music</a></li>
+                    <li><a href="music/index.html" >Videos</a></li>
                     <li><a href="movies/index.html" >Movies</a></li>
                     <li><a href="series/index.html" >Series</a></li>
                     <li><a href="channels/index.html">Channels</a></li>
@@ -346,22 +387,28 @@
                     
             </nav>
         
-        <button class="button2">Log In</button>
-        
-    <!--</div> -->
-    <div class="sept">
-        
-        
-        
-    </div>  
-    
+      </div>
     
   </header>
     
     <div class="divers">
     <div class="right">
-        
+        <div class="createaccount"><h2>Create an account.</h2></div>
         <form action="" method="post">
+            <div class="titles">
+                <input type="text" class="names" id="useremail" placeholder="First Name">
+            <input type="text" class="names" id="useremail" placeholder="Last Name">
+           <input type="text" class="names" id="useremail" placeholder="Middle Name">
+            <input type="email" class="names" id="useremail" placeholder="Email Address">
+            <input type="password" class="names" id="useremail" placeholder="Password">
+            <input type="password" class="names" id="useremail" placeholder="Password">
+            Male<input type="radio">Female<input type="radio">
+            <p class="click-agreement"> By clicking "Create An Account", you agree to our <a class="click-agreement" href="">terms of service</a> and <a class="click-agreement" href="">privacy policy</a>.</p>
+            
+            <button class="button2">Create An Account</button>
+            
+            </div>
+            
             
         </form>
     </div>
@@ -376,12 +423,9 @@
   
   
     <div id="container">
-        <div class="copyright"><h2><br>Play series, movies, music, videos, and games for only $9.99/month.</h2>
+        <div class="copyright"><h2><br>Play series, movies, videos, music, and games online for only $9.99/month.</h2>
         <button class="button2">View Plan</button></div>
         <div class="seriediv"></div>
-        <div class="moviediv"></div>
-        <div class="musicdiv"></div>
-        <div class="gamediv"></div>
     </div>
   
   
@@ -391,7 +435,46 @@
   
   <footer>
     
-    <div class="copyright"><p>&copy; 2016 Chill Computers.</p></div>
+      
+      
+    <div class="copyright">
+        
+        <div class="footnotes"><h4>User Accounts</h4>
+          <a class="notes" href=""><p>Channels</p></a>
+          <a class="notes" href=""><p>Series</p></a>
+          <a class="notes" href=""><p>Movies</p></a>
+          <a class="notes" href=""><p>Videos</p></a>
+          <a class="notes" href=""><p>Music</p></a>
+          <a class="notes" href=""><p>Games</p></a>
+        </div>
+      <div class="footnotes"><h4>Distributor Accounts</h4>
+          <a class="notes" href=""><p>Channels</p></a>
+          <a class="notes" href=""><p>Series</p></a>
+          <a class="notes" href=""><p>Movies</p></a>
+          <a class="notes" href=""><p>Videos</p></a>
+          <a class="notes" href=""><p>Music</p></a>
+          <a class="notes" href=""><p>Games</p></a>
+      </div>
+      <div class="footnotes"><h4>Legal</h4>
+          <a class="notes" href=""><p>Terms of Use</p></a>
+          <a class="notes" href=""><p>Privacy Policy</p></a>
+          <a class="notes" href=""><p>Warranties</p></a>
+          <a class="notes" href=""><p>Licenses</p></a>
+      </div>
+      <div class="footnotes"><h4>About</h4>
+          <a class="notes" href=""><p>Early years</p></a>
+          <a class="notes" href=""><p>Founders</p></a>
+          <a class="notes" href=""><p>Mission</p></a>
+          <a class="notes" href=""><p>Vendors</p></a>
+      </div>
+      <div class="footnotes"><h4>Contact</h4>
+          <a class="notes" href=""><p>Head Office</p></a>
+          <a class="notes" href=""><p>Jobs</p></a>
+          <a class="notes" href=""><p>Phone</p></a>
+          <a class="notes" href=""><p>Email</p></a>
+      </div>
+        <hr>
+        <p>&copy; 2016 Chill Technologies. All Rights Reserved.</p></div>
     
   </footer>
 
