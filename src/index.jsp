@@ -51,10 +51,12 @@
     margin-bottom: 0;
     margin-left: 0;
   }
+
   nav ul li
   {
     float: right;
   }
+
   nav ul li a:link, nav ul li a:visited
   {
     display: block;
@@ -75,6 +77,7 @@
     font-family: /*"Josefin Slab", Arial, Helvetica, Pacifico, Rockwell,*/ sans-serif;
     font-size: 12px;
   }
+
   nav ul li a:hover, nav ul li a:active
   {
     color: #e00;
@@ -241,30 +244,35 @@
       width: 90%;
       height: 500px;
   }
+
 .moviediv
 {
     margin: 25px auto 25px auto;
     height: 300px;
     background-color: #e63;
 }
+
 .seriediv
 {
     margin: 25px auto 25px auto;
     height: 300px;
     background-color: #e63;
 }
+
 .musicdiv
 {
     margin: 25px auto 25px auto;
     height: 300px;
     background-color: #e63;
 }
+
 .gamediv
 {
     margin: 25px auto 25px auto;
     height: 300px;
     background-color: #e63;
 }
+
   .divers
   {
       margin-left: 0;
@@ -318,6 +326,7 @@
       margin-left: 20px;
       background-color: #e45;
   }
+
 .copyright
 {
     margin-left: auto;
@@ -325,11 +334,13 @@
     text-align: center;
     width: 1000px;
 }
+
 .click-agreement
 {
     color: #fff;
     font-size: 9px;
 }
+
 .footnotes
 {
     float: left;
@@ -338,11 +349,13 @@
     width: 200px;
     text-align: left;
 }
+
 .notes
 {
     text-decoration: none;
     color: #000;
 }
+
 .notes:hover
 {
     color: #e63;
