@@ -1,15 +1,17 @@
-<%@page import="java.sql.*" %>
-<%@page import="java.util.Date" %>
-<% Class.forName("com.mysql.jdbc.Driver"); %>
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
-<html lang="en"> 
-<head>
-<title>Home | Chill</title>
-<link rel="shortcut icon" type="image/png" href="circle.png"/>
-<meta charset="utf-8" /> 
-<style type="text/css">
-  
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Users | Chill</title>
+        <style type="text/css">
+            body
+            {
+                margin: 0;
+                background-color: #e63;
+                font-family: sans-serif;
+            }
+            
   header
   {
     background-color: #FFF;
@@ -23,7 +25,7 @@
     margin-top: 0;
     height: 50px;
     color: #000;
-    opacity: 0.7;
+    opacity: 1.0;
     box-shadow: 0px 2px 5px #AAA;
     text-indent: 30px;
   }
@@ -37,21 +39,11 @@
       margin-top: 0;
   }
   
-  body
-  {
-    margin: 0;
-    background-color: #EEE;
-    font-family: sans-serif;
-  }
-  
   nav ul
   {
     list-style-type: none;
     overflow: auto;
-    margin-right: 0;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 0;
+    margin: 0;
   }
 
   nav ul li
@@ -85,39 +77,20 @@
     color: #e00;
     opacity: 1.0;
   }
-      
-  .sept
-  {
-    background-color: #FFF;
-    margin-right: 0;
-    margin-top: 0;
-    margin-left: 500px;
-    height: 505px;
-    color: #000;
-    opacity: 0.7;
-    box-shadow: 0px 2px 5px #AAA;
-  }
   
-  .sept2
+  nav ul li a.current
   {
-    background-color: #EEE;
-    margin-right: 0;
-    margin-top: 0;
-    margin-left: 500px;
-    height: 500px;
-    color: #000;
+    color: #e00;
   }
   
   nav
-  
   {
       
-    margin-right: 0px;
     float: right;
       
   }
-  
-  footer
+            
+            footer
   {
     background-color: #FFF;
     margin-left: 0;
@@ -125,61 +98,21 @@
     margin-bottom: 0;
     height: 300px;
     box-shadow: 0px 2px 5px #AAA;
-    opacity: 0.7;
-    margin-top: -200px;
+    opacity: 1.0;
+    margin-top: 0px;
     font-size: 12px;
   }
-  
-  .logos
-  {
-      background-color: #333;
-      margin-left: 10px;
-      margin-right: 10px;
-      height: 200px;
-      box-shadow: 0px 2px 5px #AAA;
-      opacity: 0.8;
-      margin-top: -500px;
-  }
-  
-  #logos
-  {
-      height: 50%;
-      opacity: 1.0;
-  }
-  
-  .button {
-   border-top: 1px solid #d4003c;
-   background: #780000;
-   background: -webkit-gradient(linear, left top, left bottom, from(#b00000), to(#780000));
-   background: -webkit-linear-gradient(top, #b00000, #780000);
-   background: -moz-linear-gradient(top, #b00000, #780000);
-   background: -ms-linear-gradient(top, #b00000, #780000);
-   background: -o-linear-gradient(top, #b00000, #780000);
-   padding: 7.5px 25px;
-   -webkit-border-radius: 5px;
-   -moz-border-radius: 5px;
-   border-radius: 5px;
-   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
-   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
-   box-shadow: rgba(0,0,0,1) 0 1px 0;
-   text-shadow: rgba(0,0,0,.4) 0 1px 0;
-   color: white;
-   font-size: 17px;
-   font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
-   text-decoration: none;
-   vertical-align: middle;
-   }
-.button:hover {
-   border-top-color: #c90000;
-   background: #c90000;
-   color: #f2efef;
-   }
-.button:active {
-   border-top-color: #a30a11;
-   background: #a30a11;
-   }
-   
-   .button2 {
+            
+            .block
+            {
+                width: 500px;
+                height: 300px;
+                margin: 15% auto 15% auto;
+                background-color: #fff;
+                opacity: 1.0;
+            }
+            
+            .button2 {
    border-top: 1px solid #55b506;
    background: #2a4d02;
    background: -webkit-gradient(linear, left top, left bottom, from(#539c00), to(#2a4d02));
@@ -202,6 +135,7 @@
    vertical-align: middle;
    margin-right: 0px;
    margin-top: 5px;
+   width: 400px;
    }
 .button2:hover {
    border-top-color: #2c7d04;
@@ -209,141 +143,69 @@
    color: #f2efef;
    }
 .button2:active {
-   border-top-color: #a30a11;
-   background: #a30a11;
+   border-top-color: #2c7d04;
+   background: #2c7d04;
    }
-  
-  .rimground
-  {
-    width: 100px;
-    height: 150px;
-    opacity: 1.0;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-left: 5px;
-    margin-right: 5px;
-    float: left;
-    text-align: center;
-    color: #FFF;
-    font-family: sans-serif;
-    font-size: 10px;
-  }
-    
-  .bol
+   
+   .bol
   {
       float: left;
       margin-top: 5px;
       margin-left: 0px;
       width: 30px;
   }
-  
-  #container
+   
+   .titles
   {
-      background-color: #fff;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 70px;
-      width: 90%;
-      height: 500px;
-  }
-
-.moviediv
-{
-    margin: 25px auto 25px auto;
-    height: 300px;
-    background-color: #e63;
-}
-
-.seriediv
-{
-    margin: 25px auto 25px auto;
-    height: 300px;
-    background-color: #e63;
-}
-
-.musicdiv
-{
-    margin: 25px auto 25px auto;
-    height: 300px;
-    background-color: #e63;
-}
-
-.gamediv
-{
-    margin: 25px auto 25px auto;
-    height: 300px;
-    background-color: #e63;
-}
-
-  .divers
-  {
-      margin-left: 0;
-      margin-right: 0;
-      margin-top: 0;
-      height: 500px;
-  }
-  
-  .right
-  {
-      margin-left: 0;
-      margin-top: 0px;
-      height: 500px;
-      width: 500px;
-      background-color: #e63;
-      float: left;
-  }
-  
-  .createaccount
-  {
-      color: #FFF;
       width: 400px;
+      height: 200px;
+      margin-top: 0px;
+      margin-bottom: auto;
       margin-left: auto;
       margin-right: auto;
       text-align: center;
   }
   
-  .titles
-  {
-      width: 410px;
-      height: 300px;
-      margin-top: 20px;
-      margin-left: 90px;
-  }
-  
   .names
   {
-    width: 300px;
+    width: 390px;
     height: 30px;
     padding: 4px;
     margin: 5px 100px 5px auto;
-    border-radius: 10px;
+    border-radius: 5px;
     font-size: 17px;
   }
   
-  .boxes
+  .create-account
   {
-      width: 200px;
-      height: 300px;
-      margin-top: 20px;
-      margin-left: 20px;
-      background-color: #e45;
+      text-decoration: none;
+      font-family: sans-serif;
+      color: #e63;
+      margin-top: auto;
+      margin-bottom: auto;
   }
-
-.copyright
-{
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    width: 1000px;
-}
-
-.click-agreement
-{
-    color: #fff;
-    font-size: 9px;
-}
-
-.footnotes
+  
+  .forgot-password
+  {
+      text-decoration: none;
+      font-family: sans-serif;
+      color: #e63;
+      margin-top: 0px;
+      text-align: left;
+      font-size: 10px;
+      width: 400px;
+      height: 20px;
+  }
+  
+  .logos
+  {
+      text-align: center;
+      height: 50px;
+      width: 500px;
+      color: #e63;
+  }
+  
+  .footnotes
 {
     float: left;
     font-size: 12px;
@@ -362,43 +224,39 @@
 {
     color: #e63;
 }
-  
-  #epic
-  {
-      margin-left: 0px;
-  }
-  
-  
-</style>
 
-<script type="text/javascript">
+.copyright
+{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 1000px;
+}
   
-  
-  
-</script>
-
-</head>
-
-<body>
-  
-  <header>
+            
+        </style>
+        
+        
+    </head>
+    <body>
+        
+        <header>
       
     
       <div class="head">
         
-        <a href="index.html"><img class="bol" src="circle2.png" alt="bol"></a>
+        <a href="../index.html"><img class="bol" src="../circle2.png" alt="bol"></a>
         
             <nav>
                 
                 <ul>
-                    <li><a href="music/index.html" >Users</a></li>
-                    <li><a href="games/index.html">Press</a></li>
-                    <li><a href="games/index.html">Games</a></li>
-                    <li><a href="music/index.html" >Music</a></li>
-                    <li><a href="music/index.html" >Videos</a></li>
-                    <li><a href="movies/index.html" >Movies</a></li>
-                    <li><a href="series/index.html" >Series</a></li>
-                    <li><a href="channels/index.html">Channels</a></li>
+                    <li><a href="../users/index.html" class="current">Users</a></li>
+                    <li><a href="../games/index.html">Games</a></li>
+                    <li><a href="../music/index.html" >Music</a></li>
+                    <li><a href="../music/index.html" >Videos</a></li>
+                    <li><a href="../movies/index.html" >Movies</a></li>
+                    <li><a href="../series/index.html" >Series</a></li>
+                    <li><a href="../channels/index.html">Channels</a></li>
                 </ul>
                     
             </nav>
@@ -406,124 +264,26 @@
       </div>
     
   </header>
-    
-    <div class="divers">
-    <div class="right">
-        <div class="createaccount"><h2>Create an account.</h2></div>
+        
+        <div class="block">
+            <div class="logos">
+                
+            </div>
         <form action="" method="post">
             <div class="titles">
-                <input type="text" class="names" id="useremail" placeholder="First Name">
-            <input type="text" class="names" id="useremail" placeholder="Last Name">
-           <input type="text" class="names" id="useremail" placeholder="Middle Name">
             <input type="email" class="names" id="useremail" placeholder="Email Address">
             <input type="password" class="names" id="useremail" placeholder="Password">
-            <input type="password" class="names" id="useremail" placeholder="Password">
-            Male<input type="radio">Female<input type="radio">
-            <p class="click-agreement"> By clicking "Create An Account", you agree to our <a class="click-agreement" href="">terms of service</a> and <a class="click-agreement" href="">privacy policy</a>.</p>
-            
-            <button class="button2">Create An Account</button>
-            
+            <div class="forgot-password"><a class="forgot-password" href="">Forgot password?</a></div>
+            <button class="button2">Log In To Your Account</button>
+            <p>Not a member? <a class="create-account" href="">Create an account.</a></p>
             </div>
             
             
         </form>
-    </div>
         
-        <%!
-            public class Actor 
-{
-    String URL = "jdbc:mysql://localhost:3306/sakila";
-    String USERNAME = "root";
-    String PASSWORD = "Empire7";
-    Connection connection = null;
-    PreparedStatement insertActors = null;
-    ResultSet resultSet = null;
-
-    public Actor()
-    {
-        try
-        {
-            connection = DriverManager.getConnection(URL, USERNAME, PASSWORD);
-            insertActors = connection.prepareStatement("INSERT INTO actor (first_name, last_name, last_update)" + " VALUES (?, ?, ?)");
-        }
-
-        catch (SQLException e)
-        {
-            e.printStackTrace();
-        }
-    }
-
-    public int setActors(String firstname, String lastname, Timestamp timeStamp)
-    {
-        int result = 0;
-
-        try
-        {
-            insertActors.setString(1, firstname);
-            insertActors.setString(2, lastname);
-            insertActors.setTimestamp(3, timeStamp);
-            result = insertActors.executeUpdate();
-        }
-
-        catch (SQLException e)
-        {
-            e.printStackTrace();
-        }
-
-
-        return result;
-
-    }
-
-}
-            
-        %>
+        </div>
         
-        <%
-            int result = 0;
-            String firstname = new String();
-            String lastname = new String();
-            
-            if (request.getParameter("firstname") != null)
-            {
-                firstname = request.getParameter("firstname");
-            }
-            
-            if (request.getParameter("lastname") != null)
-            {
-                lastname = request.getParameter("lastname");
-            }
-            
-            Date date = new Date();
-            Timestamp timeStamp = new Timestamp(date.getTime());
-            
-            Actor actor = new Actor();
-            result = actor.setActors(firstname, lastname, timeStamp);
-
-            %>
-        
-    <div class="sept2">
-        
-        <img src="epic.png" alt="epic" id="epic" width="1000">
-        <form action="" method="post">
-            
-        </form>
-    </div>
-    </div>
-  
-  
-    <div id="container">
-        <div class="copyright"><h2><br>Play series, movies, videos, music, and games online for only $9.99/month.</h2>
-        <button class="button2">View Plan</button></div>
-        <div class="seriediv"></div>
-    </div>
-  
-  
-  
-  
-  <img src="minion.png" alt="minion" id="minion">
-  
-  <footer>
+        <footer>
     
       
       
@@ -567,6 +327,6 @@
         <p>&copy; 2016 Chill Technologies. All Rights Reserved.</p></div>
     
   </footer>
-
-</body>
+        
+    </body>
 </html>
