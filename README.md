@@ -18,8 +18,12 @@ A web service for chatting with friends and accessing multimedia streaming with 
 
 # Server Software
 
-1. Apache HTTP Server
+1. Apache Tomcat
 2. MySQL / MariaDB
+
+
+# IDE
+1. NetBeans
 
 
 # Dependencies
