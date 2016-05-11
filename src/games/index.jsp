@@ -452,18 +452,18 @@ input:-moz-placeholder {
       
     <div class="head">
         
-        <a href="../index.html"><img class="bol" src="../circle.png" alt="bol"></a>
+        <a href="../index.jsp"><img class="bol" src="../circle.png" alt="bol"></a>
         
             <nav>
                 
                 <ul>
-                    <li><a href="../users/index.html" >Users</a></li>
-                    <li><a href="index.html" class="current">Games</a></li>
-                    <li><a href="../music/index.html" >Music</a></li>
-                    <li><a href="../music/index.html" >Videos</a></li>
-                    <li><a href="../movies/index.html" >Movies</a></li>
-                    <li><a href="../series/index.html" >Series</a></li>
-                    <li><a href="../channels/index.html">Channels</a></li>
+                    <li><a href="../users/index.jsp" >Users</a></li>
+                    <li><a href="index.jsp" class="current">Games</a></li>
+                    <li><a href="../music/index.jsp" >Music</a></li>
+                    <li><a href="../music/index.jsp" >Videos</a></li>
+                    <li><a href="../movies/index.jsp" >Movies</a></li>
+                    <li><a href="../series/index.jsp" >Series</a></li>
+                    <li><a href="../channels/index.jsp">Channels</a></li>
                 </ul>
                     
             </nav>
@@ -507,7 +507,7 @@ input:-moz-placeholder {
   <a href=""><div class="rimground"><img src="series/cheerup.jpg" alt="cheerup" id="logos">
       <p>Cheer Up!</p><p>$3.99</p></div></a>
   <a href=""><div class="rimground"><img src="series/chuck.jpg" alt="splash" id="logos">
-      <p>Chuck</p><p>Season 1</p><p>$3.99</p></div></a>
+      <p>Chuck</p><p>$3.99</p></div></a>
   <a href=""><div class="rimground"><img src="series/deepbreath.jpg" alt="signals" id="logos">
       <p>Deep Breath</p><p>$3.99</p></div></a>
   <a href=""><div class="rimground"><img src="series/dhousewife.jpg" alt="sweep" id="logos">
