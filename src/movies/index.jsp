@@ -452,18 +452,18 @@ input:-moz-placeholder {
       
     <div class="head">
         
-        <a href="../index.html"><img class="bol" src="../circle.png" alt="bol"></a>
+        <a href="../index.jsp"><img class="bol" src="../circle.png" alt="bol"></a>
         
             <nav>
                 
                 <ul>
-                    <li><a href="../users/index.html" >Users</a></li>
-                    <li><a href="../games/index.html">Games</a></li>
-                    <li><a href="../music/index.html" >Music</a></li>
-                    <li><a href="../music/index.html" >Videos</a></li>
-                    <li><a href="../movies/index.html" class="current">Movies</a></li>
-                    <li><a href="../series/index.html" >Series</a></li>
-                    <li><a href="../channels/index.html">Channels</a></li>
+                    <li><a href="../users/index.jsp" >Users</a></li>
+                    <li><a href="../games/index.jsp">Games</a></li>
+                    <li><a href="../music/index.jsp" >Music</a></li>
+                    <li><a href="../music/index.jsp" >Videos</a></li>
+                    <li><a href="../movies/index.jsp" class="current">Movies</a></li>
+                    <li><a href="../series/index.jsp" >Series</a></li>
+                    <li><a href="../channels/index.jsp">Channels</a></li>
                 </ul>
                     
             </nav>
@@ -491,97 +491,97 @@ input:-moz-placeholder {
       </div>
       
       
-      <a href="3-0000-0000/index.html"><div class="rimground"><img src="3-0000-0000/astroboy.jpg" alt="astroboy" id="logos">
+      <a href="3-0000-0000/index.jsp"><div class="rimground"><img src="3-0000-0000/astroboy.jpg" alt="astroboy" id="logos">
               <p>Astro Boy</p><p>$9.99</p></div></a>
-  <a href="3-0000-0001/index.html"><div class="rimground"><img src="3-0000-0001/beemovie.jpg" alt="beemovie" id="logos">
+  <a href="3-0000-0001/index.jsp"><div class="rimground"><img src="3-0000-0001/beemovie.jpg" alt="beemovie" id="logos">
       <p>Bee Movie</p><p>$14.99</p></div></a>
-  <a href="3-0000-0002/index.html"><div class="rimground"><img src="3-0000-0002/bighero6.jpg" alt="bighero6" id="logos">
+  <a href="3-0000-0002/index.jsp"><div class="rimground"><img src="3-0000-0002/bighero6.jpg" alt="bighero6" id="logos">
       <p>Big Hero 6</p><p>$3.99</p></div></a>
-  <a href="3-0000-0003/index.html"><div class="rimground"><img src="3-0000-0003/bolt.jpg" alt="phantasm" id="logos">
+  <a href="3-0000-0003/index.jsp"><div class="rimground"><img src="3-0000-0003/bolt.jpg" alt="phantasm" id="logos">
       <p>Bolt</p><p>$3.99</p></div></a>
-  <a href="3-0000-0004/index.html"><div class="rimground"><img src="3-0000-0004/cloudy.jpg" alt="cloudy" id="logos">
+  <a href="3-0000-0004/index.jsp"><div class="rimground"><img src="3-0000-0004/cloudy.jpg" alt="cloudy" id="logos">
       <p>Cloudy With A Chance Of Meatballs</p><p>$3.99</p></div></a>
-  <a href="3-0000-0005/index.html"><div class="rimground"><img src="3-0000-0005/despicableme.jpg" alt="sunspot" id="logos">
+  <a href="3-0000-0005/index.jsp"><div class="rimground"><img src="3-0000-0005/despicableme.jpg" alt="sunspot" id="logos">
       <p>Despicable Me</p><p>$3.99</p></div></a>
-  <a href="3-0000-0006/index.html"><div class="rimground"><img src="3-0000-0006/despicableme2.jpg" alt="splash" id="logos">
+  <a href="3-0000-0006/index.jsp"><div class="rimground"><img src="3-0000-0006/despicableme2.jpg" alt="splash" id="logos">
       <p>Despicable Me 2</p><p>$3.99</p></div></a>
-  <a href="3-0000-0007/index.html"><div class="rimground"><img src="3-0000-0007/diaryofawimpykid.jpg" alt="signals" id="logos">
+  <a href="3-0000-0007/index.jsp"><div class="rimground"><img src="3-0000-0007/diaryofawimpykid.jpg" alt="signals" id="logos">
       <p>Diary of a Wimpy Kid</p><p>$3.99</p></div></a>
-  <a href="3-0000-0008/index.html"><div class="rimground"><img src="3-0000-0008/epic.jpg" alt="sweep" id="logos">
+  <a href="3-0000-0008/index.jsp"><div class="rimground"><img src="3-0000-0008/epic.jpg" alt="sweep" id="logos">
       <p>Epic</p><p>$3.99</p></div></a>
-  <a href="3-0000-0009/index.html"><div class="rimground"><img src="3-0000-0009/frozen.jpg" alt="think" id="logos">
+  <a href="3-0000-0009/index.jsp"><div class="rimground"><img src="3-0000-0009/frozen.jpg" alt="think" id="logos">
       <p>Frozen</p><p>$3.99</p></div></a>
-  <a href="3-0000-0010/index.html"><div class="rimground"><img src="3-0000-0010/guardiansofthegalaxy.jpg" alt="tourism" id="logos">
+  <a href="3-0000-0010/index.jsp"><div class="rimground"><img src="3-0000-0010/guardiansofthegalaxy.jpg" alt="tourism" id="logos">
       <p>Guardians of the Galaxy</p><p>$3.99</p></div></a>
-  <a href="3-0000-0011/index.html"><div class="rimground"><img src="3-0000-0011/highschoolmusical2.jpg" alt="pipes" id="logos">
+  <a href="3-0000-0011/index.jsp"><div class="rimground"><img src="3-0000-0011/highschoolmusical2.jpg" alt="pipes" id="logos">
       <p>High School Musical 2</p><p>$3.99</p></div></a>
-  <a href="3-0000-0012/index.html"><div class="rimground"><img src="3-0000-0012/hop.jpg" alt="travels" id="logos">
+  <a href="3-0000-0012/index.jsp"><div class="rimground"><img src="3-0000-0012/hop.jpg" alt="travels" id="logos">
       <p>Hop</p><p>$3.99</p></div></a>
-  <a href="3-0000-0013/index.html"><div class="rimground"><img src="3-0000-0013/hugo.jpg" alt="travels" id="logos">
+  <a href="3-0000-0013/index.jsp"><div class="rimground"><img src="3-0000-0013/hugo.jpg" alt="travels" id="logos">
       <p>Hugo</p><p>$3.99</p></div></a>
-  <a href="3-0000-0014/index.html"><div class="rimground"><img src="3-0000-0014/iceage.jpg" alt="turbine" id="logos">
+  <a href="3-0000-0014/index.jsp"><div class="rimground"><img src="3-0000-0014/iceage.jpg" alt="turbine" id="logos">
       <p>Ice Age</p><p>$3.99</p></div></a>
-  <a href="3-0000-0015/index.html"><div class="rimground"><img src="3-0000-0015/iceage4.jpg" alt="planets" id="logos">
+  <a href="3-0000-0015/index.jsp"><div class="rimground"><img src="3-0000-0015/iceage4.jpg" alt="planets" id="logos">
       <p>Ice Age 4</p><p>$3.99</p></div></a>
-  <a href="3-0000-0016/index.html"><div class="rimground"><img src="3-0000-0016/kidnappedbythekids.jpg" alt="woods" id="logos">
+  <a href="3-0000-0016/index.jsp"><div class="rimground"><img src="3-0000-0016/kidnappedbythekids.jpg" alt="woods" id="logos">
       <p>Kidnapped by the Kids</p><p>$3.99</p></div></a>
-  <a href="3-0000-0017/index.html"><div class="rimground"><img src="3-0000-0017/legomovie.jpg" alt="beeflower" id="logos">
+  <a href="3-0000-0017/index.jsp"><div class="rimground"><img src="3-0000-0017/legomovie.jpg" alt="beeflower" id="logos">
       <p>Lego Movie</p><p>$3.99</p></div></a>
-  <a href="3-0000-0018/index.html"><div class="rimground"><img src="3-0000-0018/madagascar.jpg" alt="aviary" id="logos">
+  <a href="3-0000-0018/index.jsp"><div class="rimground"><img src="3-0000-0018/madagascar.jpg" alt="aviary" id="logos">
       <p>Madagascar</p><p>$3.99</p></div></a>
-  <a href="3-0000-0019/index.html"><div class="rimground"><img src="3-0000-0019/madagascar3.jpg" alt="cheese" id="logos">
+  <a href="3-0000-0019/index.jsp"><div class="rimground"><img src="3-0000-0019/madagascar3.jpg" alt="cheese" id="logos">
       <p>Madagascar 3</p><p>$3.99</p></div></a>
-  <a href="3-0000-0020/index.html"><div class="rimground"><img src="3-0000-0020/meettherobinsons.jpg" alt="phantasm" id="logos">
+  <a href="3-0000-0020/index.jsp"><div class="rimground"><img src="3-0000-0020/meettherobinsons.jpg" alt="phantasm" id="logos">
       <p>Meet the Robinsons</p><p>$3.99</p></div></a>
-  <a href="3-0000-0021/index.html"><div class="rimground"><img src="3-0000-0021/monstersvsaliens.jpg" alt="thedreamchannel" id="logos">
+  <a href="3-0000-0021/index.jsp"><div class="rimground"><img src="3-0000-0021/monstersvsaliens.jpg" alt="thedreamchannel" id="logos">
       <p>Monsters VS Aliens</p><p>$3.99</p></div></a>
-  <a href="3-0000-0022/index.html"><div class="rimground"><img src="3-0000-0022/mrpopperspenguins.jpg" alt="sunspot" id="logos">
+  <a href="3-0000-0022/index.jsp"><div class="rimground"><img src="3-0000-0022/mrpopperspenguins.jpg" alt="sunspot" id="logos">
       <p>Mr. Popper's Penguins</p><p>$3.99</p></div></a>
-  <a href="3-0000-0023/index.html"><div class="rimground"><img src="3-0000-0023/muppets.jpg" alt="splash" id="logos">
+  <a href="3-0000-0023/index.jsp"><div class="rimground"><img src="3-0000-0023/muppets.jpg" alt="splash" id="logos">
       <p>Muppets</p><p>$3.99</p></div></a>
-  <a href="3-0000-0024/index.html"><div class="rimground"><img src="3-0000-0024/openseason2.jpg" alt="signals" id="logos">
+  <a href="3-0000-0024/index.jsp"><div class="rimground"><img src="3-0000-0024/openseason2.jpg" alt="signals" id="logos">
       <p>Open Season 2</p><p>$3.99</p></div></a>
-  <a href="3-0000-0025/index.html"><div class="rimground"><img src="3-0000-0025/paddington.jpg" alt="sweep" id="logos">
+  <a href="3-0000-0025/index.jsp"><div class="rimground"><img src="3-0000-0025/paddington.jpg" alt="sweep" id="logos">
       <p>Paddington</p><p>$3.99</p></div></a>
-  <a href="3-0000-0026/index.html"><div class="rimground"><img src="3-0000-0026/pixels.jpg" alt="think" id="logos">
+  <a href="3-0000-0026/index.jsp"><div class="rimground"><img src="3-0000-0026/pixels.jpg" alt="think" id="logos">
       <p>Pixels</p><p>$3.99</p></div></a>
-  <a href="3-0000-0027/index.html"><div class="rimground"><img src="3-0000-0027/rango.jpg" alt="tourism" id="logos">
+  <a href="3-0000-0027/index.jsp"><div class="rimground"><img src="3-0000-0027/rango.jpg" alt="tourism" id="logos">
       <p>Rango</p><p>$3.99</p></div></a>
-  <a href="3-0000-0028/index.html"><div class="rimground"><img src="3-0000-0028/rio.jpg" alt="pipes" id="logos">
+  <a href="3-0000-0028/index.jsp"><div class="rimground"><img src="3-0000-0028/rio.jpg" alt="pipes" id="logos">
       <p>Rio</p><p>$3.99</p></div></a>
-  <a href="3-0000-0029/index.html"><div class="rimground"><img src="3-0000-0029/shorts.jpg" alt="travels" id="logos">
+  <a href="3-0000-0029/index.jsp"><div class="rimground"><img src="3-0000-0029/shorts.jpg" alt="travels" id="logos">
       <p>Shorts</p><p>$3.99</p></div></a>
-  <a href="3-0000-0030/index.html"><div class="rimground"><img src="3-0000-0030/shrek.jpg" alt="turbine" id="logos">
+  <a href="3-0000-0030/index.jsp"><div class="rimground"><img src="3-0000-0030/shrek.jpg" alt="turbine" id="logos">
       <p>Shrek</p><p>$3.99</p></div></a>
-  <a href="3-0000-0031/index.html"><div class="rimground"><img src="3-0000-0031/smurfs.jpg" alt="planets" id="logos">
+  <a href="3-0000-0031/index.jsp"><div class="rimground"><img src="3-0000-0031/smurfs.jpg" alt="planets" id="logos">
       <p>The Smurfs</p><p>$3.99</p></div></a>
-  <a href="3-0000-0032/index.html"><div class="rimground"><img src="3-0000-0032/smurfs2.jpg" alt="woods" id="logos">
+  <a href="3-0000-0032/index.jsp"><div class="rimground"><img src="3-0000-0032/smurfs2.jpg" alt="woods" id="logos">
       <p>The Smurfs 2</p><p>$3.99</p></div></a>
-  <a href="3-0000-0033/index.html"><div class="rimground"><img src="3-0000-0033/spykids.jpg" alt="duckhunt2" id="logos">
+  <a href="3-0000-0033/index.jsp"><div class="rimground"><img src="3-0000-0033/spykids.jpg" alt="duckhunt2" id="logos">
       <p>Spy Kids</p><p>$3.99</p></div></a>
-  <a href="3-0000-0034/index.html"><div class="rimground"><img src="3-0000-0034/tangled.jpg" alt="pilots" id="logos">
+  <a href="3-0000-0034/index.jsp"><div class="rimground"><img src="3-0000-0034/tangled.jpg" alt="pilots" id="logos">
       <p>Tangled</p><p>$3.99</p></div></a>
-  <a href="3-0000-0035/index.html"><div class="rimground"><img src="3-0000-0035/thecroods.jpg" alt="think" id="logos">
+  <a href="3-0000-0035/index.jsp"><div class="rimground"><img src="3-0000-0035/thecroods.jpg" alt="think" id="logos">
       <p>The Croods</p><p>$3.99</p></div></a>
-  <a href="3-0000-0036/index.html"><div class="rimground"><img src="3-0000-0036/thekaratekid.jpg" alt="tourism" id="logos">
+  <a href="3-0000-0036/index.jsp"><div class="rimground"><img src="3-0000-0036/thekaratekid.jpg" alt="tourism" id="logos">
       <p>The Karate Kid</p><p>$3.99</p></div></a>
-  <a href="3-0000-0037/index.html"><div class="rimground"><img src="3-0000-0037/thelorax.jpg" alt="pipes" id="logos">
+  <a href="3-0000-0037/index.jsp"><div class="rimground"><img src="3-0000-0037/thelorax.jpg" alt="pipes" id="logos">
       <p>The Lorax</p><p>$3.99</p></div></a>
-  <a href="3-0000-0038/index.html"><div class="rimground"><img src="3-0000-0038/thepeanutsmovie.jpg" alt="travels" id="logos">
+  <a href="3-0000-0038/index.jsp"><div class="rimground"><img src="3-0000-0038/thepeanutsmovie.jpg" alt="travels" id="logos">
       <p>The Peanuts Movie</p><p>$3.99</p></div></a>
-  <a href="3-0000-0039/index.html"><div class="rimground"><img src="3-0000-0039/thepolarexpress.jpg" alt="turbine" id="logos">
+  <a href="3-0000-0039/index.jsp"><div class="rimground"><img src="3-0000-0039/thepolarexpress.jpg" alt="turbine" id="logos">
       <p>The Polar Express</p><p>$3.99</p></div></a>
-  <a href="3-0000-0040/index.html"><div class="rimground"><img src="3-0000-0040/theprincessbride.jpg" alt="planets" id="logos">
+  <a href="3-0000-0040/index.jsp"><div class="rimground"><img src="3-0000-0040/theprincessbride.jpg" alt="planets" id="logos">
       <p>The Princess Bride</p><p>$3.99</p></div></a>
-  <a href="3-0000-0041/index.html"><div class="rimground"><img src="3-0000-0041/timothygreen.jpg" alt="woods" id="logos">
+  <a href="3-0000-0041/index.jsp"><div class="rimground"><img src="3-0000-0041/timothygreen.jpg" alt="woods" id="logos">
       <p>The Secret Life of Timothy Green</p><p>$3.99</p></div></a>
-  <a href="3-0000-0042/index.html"><div class="rimground"><img src="3-0000-0042/toystory3.jpg" alt="duckhunt2" id="logos">
+  <a href="3-0000-0042/index.jsp"><div class="rimground"><img src="3-0000-0042/toystory3.jpg" alt="duckhunt2" id="logos">
       <p>Toy Story 3</p><p>$3.99</p></div></a>
-  <a href="3-0000-0043/index.html"><div class="rimground"><img src="3-0000-0043/turbo.jpg" alt="pilots" id="logos">
+  <a href="3-0000-0043/index.jsp"><div class="rimground"><img src="3-0000-0043/turbo.jpg" alt="pilots" id="logos">
       <p>Turbo</p><p>$3.99</p></div></a>
-  <a href="3-0000-0044/index.html"><div class="rimground"><img src="3-0000-0044/up.jpg" alt="gear" id="logos">
+  <a href="3-0000-0044/index.jsp"><div class="rimground"><img src="3-0000-0044/up.jpg" alt="gear" id="logos">
       <p>Up</p><p>$3.99</p></div></a>
-  <a href="3-0000-0045/index.html"><div class="rimground"><img src="3-0000-0045/zapped.jpg" alt="gear" id="logos">
+  <a href="3-0000-0045/index.jsp"><div class="rimground"><img src="3-0000-0045/zapped.jpg" alt="gear" id="logos">
       <p>Zapped</p><p>$3.99</p></div></a>
   </div>
   
