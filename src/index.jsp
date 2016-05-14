@@ -1,5 +1,14 @@
 
+<%-- 
+    Document   : index
+    Created on : 1-May-2016, 1:27:40 AM
+    Author     : Ajiri Osauzo Jeffrey
+--%>
 
+<%@page import="java.sql.*" %>
+<%@page import="java.util.Date" %>
+<% Class.forName("com.mysql.jdbc.Driver"); %>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en"> 
 <head>
@@ -384,18 +393,19 @@
     
       <div class="head">
         
-        <a href="index.jsp"><img class="bol" src="circle2.png" alt="bol"></a>
+        <a href="index.html"><img class="bol" src="circle2.png" alt="bol"></a>
         
             <nav>
                 
                 <ul>
-                    <li><a href="users/index.jsp" >Users</a></li>
-                    <li><a href="games/index.jsp">Games</a></li>
-                    <li><a href="music/index.jsp" >Music</a></li>
-                    <li><a href="music/index.jsp" >Videos</a></li>
-                    <li><a href="movies/index.jsp" >Movies</a></li>
-                    <li><a href="series/index.jsp" >Series</a></li>
-                    <li><a href="channels/index.jsp">Channels</a></li>
+                    <li><a href="music/index.html" >Users</a></li>
+                    <li><a href="games/index.html">Press</a></li>
+                    <li><a href="games/index.html">Games</a></li>
+                    <li><a href="music/index.html" >Music</a></li>
+                    <li><a href="music/index.html" >Videos</a></li>
+                    <li><a href="movies/index.html" >Movies</a></li>
+                    <li><a href="series/index.html" >Series</a></li>
+                    <li><a href="channels/index.html">Channels</a></li>
                 </ul>
                     
             </nav>
@@ -433,12 +443,88 @@
         </form>
     </div>
     </div>
+    
+    <%!
+            public class Actor 
+{
+    String URL = "jdbc:mysql://localhost:3306/sakila";
+    String USERNAME = "root";
+    String PASSWORD = "Empire7";
+    Connection connection = null;
+    PreparedStatement insertActors = null;
+    ResultSet resultSet = null;
+
+    public Actor()
+    {
+        try
+        {
+            connection = DriverManager.getConnection(URL, USERNAME, PASSWORD);
+            insertActors = connection.prepareStatement("INSERT INTO actor (first_name, last_name, last_update)" + " VALUES (?, ?, ?)");
+        }
+
+        catch (SQLException e)
+        {
+            e.printStackTrace();
+        }
+    }
+
+    public int setActors(String firstname, String lastname, Timestamp timeStamp)
+    {
+        int result = 0;
+
+        try
+        {
+            insertActors.setString(1, firstname);
+            insertActors.setString(2, lastname);
+            insertActors.setTimestamp(3, timeStamp);
+            result = insertActors.executeUpdate();
+        }
+
+        catch (SQLException e)
+        {
+            e.printStackTrace();
+        }
+
+
+        return result;
+
+    }
+
+}
+            
+        %>
+        
+        <%
+            int result = 0;
+            String firstname = new String();
+            String lastname = new String();
+            
+            if (request.getParameter("firstname") != null)
+            {
+                firstname = request.getParameter("firstname");
+            }
+            
+            if (request.getParameter("lastname") != null)
+            {
+                lastname = request.getParameter("lastname");
+            }
+            
+            Date date = new Date();
+            Timestamp timeStamp = new Timestamp(date.getTime());
+            
+            Actor actor = new Actor();
+            result = actor.setActors(firstname, lastname, timeStamp);
+
+            %>
   
   
     <div id="container">
-        <div class="copyright"><h2><br>Play series, movies, videos, music, and games online for only $9.99/month.</h2>
+        <div class="copyright"><h2><br>Play series, movies, music, videos, and games for only $9.99/month.</h2>
         <button class="button2">View Plan</button></div>
         <div class="seriediv"></div>
+        <div class="moviediv"></div>
+        <div class="musicdiv"></div>
+        <div class="gamediv"></div>
     </div>
   
   
@@ -448,46 +534,7 @@
   
   <footer>
     
-      
-      
-    <div class="copyright">
-        
-        <div class="footnotes"><h4>User Accounts</h4>
-          <a class="notes" href=""><p>Channels</p></a>
-          <a class="notes" href=""><p>Series</p></a>
-          <a class="notes" href=""><p>Movies</p></a>
-          <a class="notes" href=""><p>Videos</p></a>
-          <a class="notes" href=""><p>Music</p></a>
-          <a class="notes" href=""><p>Games</p></a>
-        </div>
-      <div class="footnotes"><h4>Distributor Accounts</h4>
-          <a class="notes" href=""><p>Channels</p></a>
-          <a class="notes" href=""><p>Series</p></a>
-          <a class="notes" href=""><p>Movies</p></a>
-          <a class="notes" href=""><p>Videos</p></a>
-          <a class="notes" href=""><p>Music</p></a>
-          <a class="notes" href=""><p>Games</p></a>
-      </div>
-      <div class="footnotes"><h4>Legal</h4>
-          <a class="notes" href=""><p>Terms of Use</p></a>
-          <a class="notes" href=""><p>Privacy Policy</p></a>
-          <a class="notes" href=""><p>Warranties</p></a>
-          <a class="notes" href=""><p>Licenses</p></a>
-      </div>
-      <div class="footnotes"><h4>About</h4>
-          <a class="notes" href=""><p>Early years</p></a>
-          <a class="notes" href=""><p>Founders</p></a>
-          <a class="notes" href=""><p>Mission</p></a>
-          <a class="notes" href=""><p>Vendors</p></a>
-      </div>
-      <div class="footnotes"><h4>Contact</h4>
-          <a class="notes" href=""><p>Head Office</p></a>
-          <a class="notes" href=""><p>Jobs</p></a>
-          <a class="notes" href=""><p>Phone</p></a>
-          <a class="notes" href=""><p>Email</p></a>
-      </div>
-        <hr>
-        <p>&copy; 2016 Chill Technologies. All Rights Reserved.</p></div>
+    <div class="copyright"><p>&copy; 2016 Chill Computers.</p></div>
     
   </footer>
 
