@@ -534,7 +534,7 @@
   
   <footer>
     
-    <div class="copyright"><p>&copy; 2016 Chill Computers.</p></div>
+    <div class="copyright"><p>&copy; 2016 Chill Technologies</p></div>
     
   </footer>
 
