@@ -12,7 +12,7 @@
 <!DOCTYPE html>
 <html lang="en"> 
 <head>
-<title>Home | Chill</title>
+<title>Home | Chill Online</title>
 <link rel="shortcut icon" type="image/png" href="circle.png"/>
 <meta charset="utf-8" /> 
 <style type="text/css">
@@ -20,11 +20,11 @@
   header
   {
     background-color: #FFF;
-    background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#bababa));
-   background: -webkit-linear-gradient(top, #ffffff, #bababa);
-   background: -moz-linear-gradient(top, #ffffff, #bababa);
-   background: -ms-linear-gradient(top, #ffffff, #bababa);
-   background: -o-linear-gradient(top, #ffffff, #bababa);
+    background: -webkit-gradient(linear, left top, left bottom, from(#e63), to(#bababa));
+   background: -webkit-linear-gradient(top, #e63, #bababa);
+   background: -moz-linear-gradient(top, #e63, #bababa);
+   background: -ms-linear-gradient(top, #e63, #bababa);
+   background: -o-linear-gradient(top, #e63, #bababa);
     margin-left: 0;
     margin-right: 0;
     margin-top: 0;
@@ -70,11 +70,11 @@
   {
     display: block;
     background-color: #fff;
-    background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#bababa));
-    background: -webkit-linear-gradient(top, #ffffff, #bababa);
-    background: -moz-linear-gradient(top, #ffffff, #bababa);
-    background: -ms-linear-gradient(top, #ffffff, #bababa);
-    background: -o-linear-gradient(top, #ffffff, #bababa);
+    background: -webkit-gradient(linear, left top, left bottom, from(#e63), to(#bababa));
+    background: -webkit-linear-gradient(top, #e63, #bababa);
+    background: -moz-linear-gradient(top, #e63, #bababa);
+    background: -ms-linear-gradient(top, #e63, #bababa);
+    background: -o-linear-gradient(top, #e63, #bababa);
     opacity: 0.8;
     text-align: right;
     padding-top: 18px;
@@ -89,7 +89,7 @@
 
   nav ul li a:hover, nav ul li a:active
   {
-    color: #e00;
+    color: #add9e6;
     opacity: 1.0;
   }
       
@@ -398,8 +398,7 @@
             <nav>
                 
                 <ul>
-                    <li><a href="music/index.jsp" >Users</a></li>
-                    <li><a href="games/index.jsp">Press</a></li>
+                    <li><a href="music/index.jsp" >Login</a></li>
                     <li><a href="games/index.jsp">Games</a></li>
                     <li><a href="music/index.jsp" >Music</a></li>
                     <li><a href="music/index.jsp" >Videos</a></li>
@@ -419,13 +418,13 @@
         <div class="createaccount"><h2>Create an account.</h2></div>
         <form action="" method="post">
             <div class="titles">
-                <input type="text" class="names" id="useremail" placeholder="First Name">
-            <input type="text" class="names" id="useremail" placeholder="Last Name">
-           <input type="text" class="names" id="useremail" placeholder="Middle Name">
-            <input type="email" class="names" id="useremail" placeholder="Email Address">
-            <input type="password" class="names" id="useremail" placeholder="Password">
-            <input type="password" class="names" id="useremail" placeholder="Password">
-            Male<input type="radio">Female<input type="radio">
+                <input type="text" class="names" id="first_name" placeholder="First Name">
+            <input type="text" class="names" id="last_name" placeholder="Last Name">
+           <input type="text" class="names" id="middle_name" placeholder="Middle Name (Optional)">
+            <input type="email" class="names" id="email_address" placeholder="Email Address">
+            <input type="password" class="names" id="password1" placeholder="Password">
+            <input type="password" class="names" id="password2" placeholder="Password">
+            Male<input type="radio" id="gender" value="male">Female<input type="radio" id="gender" value="female">
             <p class="click-agreement"> By clicking "Create An Account", you agree to our <a class="click-agreement" href="">terms of service</a> and <a class="click-agreement" href="">privacy policy</a>.</p>
             
             <button class="button2">Create An Account</button>
@@ -445,21 +444,21 @@
     </div>
     
     <%!
-            public class Actor 
+            public class User 
 {
     String URL = "jdbc:mysql://localhost:3306/chillonline";
     String USERNAME = "root";
     String PASSWORD = "Empire7";
     Connection connection = null;
-    PreparedStatement insertActors = null;
+    PreparedStatement insertUsers = null;
     ResultSet resultSet = null;
 
-    public Actor()
+    public User()
     {
         try
         {
             connection = DriverManager.getConnection(URL, USERNAME, PASSWORD);
-            insertActors = connection.prepareStatement("INSERT INTO actor (first_name, last_name, last_update)" + " VALUES (?, ?, ?)");
+            insertUsers = connection.prepareStatement("INSERT INTO users (first_name, last_name, middle_name, email_address, password2, gender)" + " VALUES (?, ?, ?)");
         }
 
         catch (SQLException e)
@@ -468,16 +467,16 @@
         }
     }
 
-    public int setActors(String firstname, String lastname, Timestamp timeStamp)
+    public int setUsers(String firstname, String lastname, String middlename, String email, String password, String gender, Timestamp timeStamp)
     {
         int result = 0;
 
         try
         {
-            insertActors.setString(1, firstname);
-            insertActors.setString(2, lastname);
-            insertActors.setTimestamp(3, timeStamp);
-            result = insertActors.executeUpdate();
+            insertUsers.setString(1, firstname);
+            insertUsers.setString(2, lastname);
+            insertUsers.setTimestamp(3, timeStamp);
+            result = insertUsers.executeUpdate();
         }
 
         catch (SQLException e)
@@ -498,6 +497,10 @@
             int result = 0;
             String firstname = new String();
             String lastname = new String();
+            String middlename = new String();
+            String email = new String();
+            String password = new String();
+            String gender = new String();
             
             if (request.getParameter("firstname") != null)
             {
@@ -509,22 +512,39 @@
                 lastname = request.getParameter("lastname");
             }
             
+            if (request.getParameter("middlename") != null)
+            {
+                lastname = request.getParameter("middlename");
+            }
+            
+            if (request.getParameter("email") != null)
+            {
+                lastname = request.getParameter("email");
+            }
+            
+            if (request.getParameter("password") != null)
+            {
+                lastname = request.getParameter("password");
+            }
+            
+            if (request.getParameter("gender") != null)
+            {
+                lastname = request.getParameter("gender");
+            }
+            
             Date date = new Date();
             Timestamp timeStamp = new Timestamp(date.getTime());
             
-            Actor actor = new Actor();
-            result = actor.setActors(firstname, lastname, timeStamp);
+            User user = new User();
+            result = user.setUsers(firstname, lastname, middlename, email, password, gender, timeStamp);
 
             %>
   
   
     <div id="container">
-        <div class="copyright"><h2><br>Play series, movies, music, videos, and games for only $9.99/month.</h2>
-        <button class="button2">View Plan</button></div>
+        <div class="copyright"><h2><br>Watch TV and play series, movies, music, videos, and games with other users.</h2>
+        <button class="button2">View Plans</button></div>
         <div class="seriediv"></div>
-        <div class="moviediv"></div>
-        <div class="musicdiv"></div>
-        <div class="gamediv"></div>
     </div>
   
   
@@ -534,7 +554,47 @@
   
   <footer>
     
-    <div class="copyright"><p>&copy; 2016 Chill Technologies</p></div>
+      
+    <div class="copyright">
+        
+        <div class="footnotes"><h4>User Accounts</h4>
+          <a class="notes" href=""><p>Channels</p></a>
+          <a class="notes" href=""><p>Series</p></a>
+          <a class="notes" href=""><p>Movies</p></a>
+          <a class="notes" href=""><p>Videos</p></a>
+          <a class="notes" href=""><p>Music</p></a>
+          <a class="notes" href=""><p>Games</p></a>
+        </div>
+      <div class="footnotes"><h4>Distributor Accounts</h4>
+          <a class="notes" href=""><p>Channels</p></a>
+          <a class="notes" href=""><p>Series</p></a>
+          <a class="notes" href=""><p>Movies</p></a>
+          <a class="notes" href=""><p>Videos</p></a>
+          <a class="notes" href=""><p>Music</p></a>
+          <a class="notes" href=""><p>Games</p></a>
+      </div>
+      <div class="footnotes"><h4>Legal</h4>
+          <a class="notes" href=""><p>Terms of Use</p></a>
+          <a class="notes" href=""><p>Privacy Policy</p></a>
+          <a class="notes" href=""><p>Cookie Policy</p></a>
+          <a class="notes" href=""><p>Warranties</p></a>
+          <a class="notes" href=""><p>Licenses</p></a>
+      </div>
+      <div class="footnotes"><h4>About</h4>
+          <a class="notes" href=""><p>Early years</p></a>
+          <a class="notes" href=""><p>Founders</p></a>
+          <a class="notes" href=""><p>Mission</p></a>
+          <a class="notes" href=""><p>Vendors</p></a>
+      </div>
+      <div class="footnotes"><h4>Contact</h4>
+          <a class="notes" href=""><p>Head Office</p></a>
+          <a class="notes" href=""><p>Jobs</p></a>
+          <a class="notes" href=""><p>Phone</p></a>
+          <a class="notes" href=""><p>Email</p></a>
+      </div>
+        <hr>
+        <p>&copy; 2016 Chill Technologies. All Rights Reserved.</p></div>
+    
     
   </footer>
 
