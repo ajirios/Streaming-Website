@@ -15,11 +15,11 @@
   header
   {
     background-color: #FFF;
-    background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#bababa));
-   background: -webkit-linear-gradient(top, #ffffff, #bababa);
-   background: -moz-linear-gradient(top, #ffffff, #bababa);
-   background: -ms-linear-gradient(top, #ffffff, #bababa);
-   background: -o-linear-gradient(top, #ffffff, #bababa);
+    background: -webkit-gradient(linear, left top, left bottom, from(#e63), to(#bababa));
+   background: -webkit-linear-gradient(top, #e63, #bababa);
+   background: -moz-linear-gradient(top, #e63, #bababa);
+   background: -ms-linear-gradient(top, #e63, #bababa);
+   background: -o-linear-gradient(top, #e63, #bababa);
     margin-left: 0;
     margin-right: 0;
     margin-top: 0;
@@ -55,11 +55,11 @@
   {
     display: block;
     background-color: #fff;
-    background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#bababa));
-    background: -webkit-linear-gradient(top, #ffffff, #bababa);
-    background: -moz-linear-gradient(top, #ffffff, #bababa);
-    background: -ms-linear-gradient(top, #ffffff, #bababa);
-    background: -o-linear-gradient(top, #ffffff, #bababa);
+    background: -webkit-gradient(linear, left top, left bottom, from(#e63), to(#bababa));
+    background: -webkit-linear-gradient(top, #e63, #bababa);
+    background: -moz-linear-gradient(top, #e63, #bababa);
+    background: -ms-linear-gradient(top, #e63, #bababa);
+    background: -o-linear-gradient(top, #e63, #bababa);
     opacity: 0.8;
     text-align: right;
     padding-top: 18px;
@@ -250,7 +250,7 @@
             <nav>
                 
                 <ul>
-                    <li><a href="../users/index.jsp" class="current">Users</a></li>
+                    <li><a href="../users/index.jsp" class="current">Login</a></li>
                     <li><a href="../games/index.jsp">Games</a></li>
                     <li><a href="../music/index.jsp" >Music</a></li>
                     <li><a href="../music/index.jsp" >Videos</a></li>

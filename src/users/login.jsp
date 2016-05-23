@@ -6,7 +6,7 @@
 <!DOCTYPE html>
 <html lang="en"> 
 <head>
-<title>Home | Chill</title>
+    <title id="title">Home | Chill Online</title>
 <link rel="shortcut icon" type="image/png" href="circle.png"/>
 <meta charset="utf-8" /> 
 <style type="text/css">
@@ -14,11 +14,11 @@
   header
   {
     background-color: #FFF;
-    background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#bababa));
-   background: -webkit-linear-gradient(top, #ffffff, #bababa);
-   background: -moz-linear-gradient(top, #ffffff, #bababa);
-   background: -ms-linear-gradient(top, #ffffff, #bababa);
-   background: -o-linear-gradient(top, #ffffff, #bababa);
+    background: -webkit-gradient(linear, left top, left bottom, from(#e63), to(#bababa));
+   background: -webkit-linear-gradient(top, #e63, #bababa);
+   background: -moz-linear-gradient(top, #e63, #bababa);
+   background: -ms-linear-gradient(top, #e63, #bababa);
+   background: -o-linear-gradient(top, #e63, #bababa);
     margin-left: 0;
     margin-right: 0;
     margin-top: 0;
@@ -112,6 +112,7 @@
     margin: 0;
     background-color: #EEE;
     font-family: sans-serif;
+    height: 2000px;
   }
   
   nav ul
@@ -131,11 +132,11 @@
   {
     display: block;
     background-color: #fff;
-    background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#bababa));
-    background: -webkit-linear-gradient(top, #ffffff, #bababa);
-    background: -moz-linear-gradient(top, #ffffff, #bababa);
-    background: -ms-linear-gradient(top, #ffffff, #bababa);
-    background: -o-linear-gradient(top, #ffffff, #bababa);
+    background: -webkit-gradient(linear, left top, left bottom, from(#e63), to(#bababa));
+    background: -webkit-linear-gradient(top, #e63, #bababa);
+    background: -moz-linear-gradient(top, #e63, #bababa);
+    background: -ms-linear-gradient(top, #e63, #bababa);
+    background: -o-linear-gradient(top, #e63, #bababa);
     opacity: 0.8;
     text-align: right;
     padding-top: 18px;
@@ -431,7 +432,7 @@
       height: 50px;
       margin-left: 0;
       margin-right: 0;
-      background-color: #960000;
+      background-color: #ccc;
   }
   
   .flexsearch--wrapper {
@@ -515,9 +516,48 @@ input:-moz-placeholder {
   color: #888
 }
 
-  
-  
-</style>
+.middle
+{
+    width: 67%;
+    height: 100%;
+}
+
+.menu {
+      float:left;
+      width:16%;
+      height:100%;
+    }
+    .mainContent {
+      float:right;
+      width:16%;
+      height:100%;
+    }
+  </style>
+
+<script type="text/javascript">
+
+document.getElementById("title").innerHTML = "Diego Poncho | Chill Online";
+
+var pagesVisited = new Array();
+function returnPagesVisited()
+{
+var returnValue = "So far you have visited the following pages\n";
+var pageVisitedIndex;
+var numberOfPagesVisited = pagesVisited.length;
+for (pageVisitedIndex = 0; pageVisitedIndex < numberOfPagesVisited; pageVisited++)
+{
+returnValue = returnValue + pagesVisited[pageVisitedIndex] + "\n";
+}
+return returnValue;
+}
+function addPage(fileName)
+{
+var fileNameStart = fileName.lastIndexOf("/") + 1;
+fileName = fileName.substr(fileNameStart);
+pagesVisited[pagesVisited.length] = fileName;
+return true;
+}
+</script>
 
 <script type="text/javascript">
   
@@ -534,13 +574,12 @@ input:-moz-placeholder {
     
       <div class="head">
         
-        <a href="index.html"><img class="bol" src="circle2.png" alt="bol"></a>
+        <a href="../index.html"><img class="bol" src="../circle2.png" alt="bol"></a>
         
             <nav>
                 
                 <ul>
-                    <li><a href="music/index.html" >Users</a></li>
-                    <li><a href="games/index.html">Press</a></li>
+                    <li><a href="index.html" >Logout</a></li>
                     <li><a href="games/index.html">Games</a></li>
                     <li><a href="music/index.html" >Music</a></li>
                     <li><a href="music/index.html" >Videos</a></li>
@@ -561,7 +600,7 @@ input:-moz-placeholder {
 		<div class="flexsearch--wrapper">
 			<form class="flexsearch--form" action="#" method="post">
 				<div class="flexsearch--input-wrapper">
-					<input class="flexsearch--input" type="search" placeholder="Search Users">
+					<input class="flexsearch--input" type="search" placeholder="Search">
 				</div>
 				<input class="flexsearch--submit" type="submit" value="&#10140;"/>
 			</form>
@@ -570,94 +609,13 @@ input:-moz-placeholder {
         
     </div>
     
-    <%
-            for (int i = 0; i < 10; i++)
-                
-            {
-        %>
-        
-        <div class="post-field">
-            
-            <div class="arguer"><h4><a href="">Maria Velasquez de Avila</a></h4>
-                
-                <div class="timestamp">Mar 20, 2016 3:56PM</div><br>
-                <div class="timestamp">Santiago, Chile</div>
-                    
-            </div>
-            
-            <div class="argument-field">
-                
-                
-                <p>Sincerely, I don't know why Richard and Kahlan can't be together. They're like the best couple in TV history. Cara and Richard are good too but
-                OMG Richard are Kahlan are the bomb! I remember the scene when she staked her life for Richard to get him out of the valley of perdition. I was sooo proud
-                of her...</p>
-                
-            </div>
-            
-            <div class="spectator-field">
-                
-                <div class="comments">Comment</div>
-                <div class="likes">Agree</div>
-                <div class="dislikes">Disagree</div>
-                
-            </div>
-            
-            
-        </div>
-        
-        <%
-            }
-        %>
-        
-  
-  
-  
-  <img src="minion.png" alt="minion" id="minion">
-  
-  <footer>
+    <iframe class="menu" src="profilepic.jsp"></iframe>
+    <iframe class="middle" src="users.jsp"></iframe>
+    <iframe class="mainContent" src="frames2b.jsp"></iframe>
     
-      
-      
-    <div class="copyright">
-        
-        <div class="footnotes"><h4>User Accounts</h4>
-          <a class="notes" href=""><p>Channels</p></a>
-          <a class="notes" href=""><p>Series</p></a>
-          <a class="notes" href=""><p>Movies</p></a>
-          <a class="notes" href=""><p>Videos</p></a>
-          <a class="notes" href=""><p>Music</p></a>
-          <a class="notes" href=""><p>Games</p></a>
-        </div>
-      <div class="footnotes"><h4>Distributor Accounts</h4>
-          <a class="notes" href=""><p>Channels</p></a>
-          <a class="notes" href=""><p>Series</p></a>
-          <a class="notes" href=""><p>Movies</p></a>
-          <a class="notes" href=""><p>Videos</p></a>
-          <a class="notes" href=""><p>Music</p></a>
-          <a class="notes" href=""><p>Games</p></a>
-      </div>
-      <div class="footnotes"><h4>Legal</h4>
-          <a class="notes" href=""><p>Terms of Use</p></a>
-          <a class="notes" href=""><p>Privacy Policy</p></a>
-          <a class="notes" href=""><p>Warranties</p></a>
-          <a class="notes" href=""><p>Licenses</p></a>
-      </div>
-      <div class="footnotes"><h4>About</h4>
-          <a class="notes" href=""><p>Early years</p></a>
-          <a class="notes" href=""><p>Founders</p></a>
-          <a class="notes" href=""><p>Mission</p></a>
-          <a class="notes" href=""><p>Vendors</p></a>
-      </div>
-      <div class="footnotes"><h4>Contact</h4>
-          <a class="notes" href=""><p>Head Office</p></a>
-          <a class="notes" href=""><p>Jobs</p></a>
-          <a class="notes" href=""><p>Phone</p></a>
-          <a class="notes" href=""><p>Email</p></a>
-      </div>
-        <hr>
-        <p>&copy; 2016 Chill Technologies. All Rights Reserved.</p></div>
     
-  </footer>
+    
+  
 
 </body>
 </html>
