@@ -536,7 +536,7 @@ input:-moz-placeholder {
 
 <script type="text/javascript">
 
-document.getElementById("title").innerHTML = "Diego Poncho | Chill Online";
+document.getElementById("title").innerHTML = "Diego Poncho | Channels";
 
 var pagesVisited = new Array();
 function returnPagesVisited()
