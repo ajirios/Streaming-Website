@@ -536,7 +536,7 @@ input:-moz-placeholder {
 
 <script type="text/javascript">
 
-document.getElementById("title").innerHTML = "Diego Poncho | Chill Online";
+document.getElementById("title").innerHTML = "Games | Diego Poncho | Chill Online";
 
 var pagesVisited = new Array();
 function returnPagesVisited()
