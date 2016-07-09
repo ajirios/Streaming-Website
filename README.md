@@ -20,6 +20,7 @@ A web service for chatting with friends and accessing multimedia streaming with 
 
 1. Apache Tomcat
 2. MySQL / MariaDB
+3. Amazon EC2
 
 
 # IDE
