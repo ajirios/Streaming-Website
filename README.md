@@ -20,7 +20,7 @@ A media streaming web service for chatting with friends and accessing multimedia
 
 1. Apache Tomcat
 2. MySQL / MariaDB
-3. Amazon EC2
+3. Java 8 SDK 
 
 
 # IDE
@@ -31,8 +31,16 @@ A media streaming web service for chatting with friends and accessing multimedia
 
 1. Google Chrome (latest version)
 2. Pepper 47 (Post-Stable, Stable, Beta, Canary)
+3. Amazon EC2
 
 
 # Domain
 
 http://chillonline.net
+
+
+# Compiling and Executing
+
+To compile and run this bundle, download and install the server software on your Windows or Mac computer. Download and install the IDE. Import the project into the IDE, setup environment, and run the project. The project should then run on your Chrome web browser.
+
+
