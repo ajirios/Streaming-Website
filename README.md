@@ -39,7 +39,8 @@ A media streaming web service for chatting with friends and accessing multimedia
 http://chillonline.net
 
 
-# Compiling and Executing
+
+# Compilation and Execution
 
 To compile and run this bundle, download and install the server software on your Windows or Mac computer. Download and install the IDE. Import the project into the IDE, setup environment, and run the project. The project should then run on your Chrome web browser.
 
