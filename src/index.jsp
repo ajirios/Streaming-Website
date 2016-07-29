@@ -12,19 +12,23 @@
 <!DOCTYPE html>
 <html lang="en"> 
 <head>
-<title>Home | Chill Online</title>
-<link rel="shortcut icon" type="image/png" href="circle.png"/>
+<title>ChillOnline | Register</title>
+<link rel="shortcut icon" type="image/png" href="chilli.png"/>
 <meta charset="utf-8" /> 
 <style type="text/css">
-  
+  @font-face {
+    font-family: 'Pacifico'; /*a name to be used later*/
+    src: url('Pacifico.ttf'); /*URL to font*/
+  }
+
   header
   {
     background-color: #FFF;
-    background: -webkit-gradient(linear, left top, left bottom, from(#e63), to(#bababa));
-   background: -webkit-linear-gradient(top, #e63, #bababa);
-   background: -moz-linear-gradient(top, #e63, #bababa);
-   background: -ms-linear-gradient(top, #e63, #bababa);
-   background: -o-linear-gradient(top, #e63, #bababa);
+    background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#bababa));
+   background: -webkit-linear-gradient(top, #000, #bababa);
+   background: -moz-linear-gradient(top, #000, #bababa);
+   background: -ms-linear-gradient(top, #000, #bababa);
+   background: -o-linear-gradient(top, #000, #bababa);
     margin-left: 0;
     margin-right: 0;
     margin-top: 0;
@@ -70,11 +74,11 @@
   {
     display: block;
     background-color: #fff;
-    background: -webkit-gradient(linear, left top, left bottom, from(#e63), to(#bababa));
-    background: -webkit-linear-gradient(top, #e63, #bababa);
-    background: -moz-linear-gradient(top, #e63, #bababa);
-    background: -ms-linear-gradient(top, #e63, #bababa);
-    background: -o-linear-gradient(top, #e63, #bababa);
+    background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#bababa));
+    background: -webkit-linear-gradient(top, #000, #bababa);
+    background: -moz-linear-gradient(top, #000, #bababa);
+    background: -ms-linear-gradient(top, #000, #bababa);
+    background: -o-linear-gradient(top, #000, #bababa);
     opacity: 0.8;
     text-align: right;
     padding-top: 18px;
@@ -89,8 +93,17 @@
 
   nav ul li a:hover, nav ul li a:active
   {
-    color: #add9e6;
+    color: #e63;
     opacity: 1.0;
+  }
+  
+  .chillonline
+  {
+      font-family: sans-serif, 'Pacifico';
+      font-size: 17px;
+      color: #fff;
+      text-decoration: none;
+      float: left;
   }
       
   .sept
@@ -110,7 +123,7 @@
     background-color: #EEE;
     margin-right: 0;
     margin-top: 0;
-    margin-left: 500px;
+    margin-left: 450px;
     height: 500px;
     color: #000;
   }
@@ -239,9 +252,9 @@
   .bol
   {
       float: left;
-      margin-top: 5px;
+      margin-top: 10px;
       margin-left: 0px;
-      width: 30px;
+      width: 150px;
   }
   
   #container
@@ -295,7 +308,7 @@
       margin-left: 0;
       margin-top: 0px;
       height: 500px;
-      width: 500px;
+      width: 450px;
       background-color: #e63;
       float: left;
   }
@@ -314,7 +327,7 @@
       width: 410px;
       height: 300px;
       margin-top: 20px;
-      margin-left: 90px;
+      margin-left: 65px;
   }
   
   .names
@@ -324,7 +337,7 @@
     padding: 4px;
     margin: 5px 100px 5px auto;
     border-radius: 10px;
-    font-size: 17px;
+    font-size: 15px;
   }
   
   .boxes
@@ -380,7 +393,7 @@
 
 <script type="text/javascript">
   
-  
+
   
 </script>
 
@@ -393,14 +406,14 @@
     
       <div class="head">
         
-        <a href="index.jsp"><img class="bol" src="circle2.png" alt="bol"></a>
+          <a href="index.jsp"><img class="bol" src="chillon.png" alt="bol"></a>
         
             <nav>
                 
                 <ul>
-                    <li><a href="music/index.jsp" >Login</a></li>
+                    <li><a href="users/index.jsp" >Portal</a></li>
                     <li><a href="games/index.jsp">Games</a></li>
-                    <li><a href="music/index.jsp" >Music</a></li>
+                    <li><a href="music/index.jsp" >Sounds</a></li>
                     <li><a href="music/index.jsp" >Videos</a></li>
                     <li><a href="movies/index.jsp" >Movies</a></li>
                     <li><a href="series/index.jsp" >Series</a></li>
@@ -415,19 +428,19 @@
     
     <div class="divers">
     <div class="right">
-        <div class="createaccount"><h2>Create an account.</h2></div>
+        <div class="createaccount"><h2>Register.</h2></div>
         <form action="" method="post">
             <div class="titles">
-                <input type="text" class="names" id="first_name" placeholder="First Name">
-            <input type="text" class="names" id="last_name" placeholder="Last Name">
-           <input type="text" class="names" id="middle_name" placeholder="Middle Name (Optional)">
-            <input type="email" class="names" id="email_address" placeholder="Email Address">
-            <input type="password" class="names" id="password1" placeholder="Password">
-            <input type="password" class="names" id="password2" placeholder="Password">
-            Male<input type="radio" id="gender" value="male">Female<input type="radio" id="gender" value="female">
-            <p class="click-agreement"> By clicking "Create An Account", you agree to our <a class="click-agreement" href="">terms of service</a> and <a class="click-agreement" href="">privacy policy</a>.</p>
+                <input type="text" class="names" id="first_name" placeholder="First Name*">
+            <input type="text" class="names" id="last_name" placeholder="Last Name*">
+           <input type="text" class="names" id="middle_name" placeholder="Middle Name">
+            <input type="email" class="names" id="email_address" placeholder="Email Address*">
+            <input type="password" class="names" id="password" placeholder="Signature*">
+            <p class="click-agreement">A client's unique signature must be 8 - 12 characters in length with at least <br>one uppercase letter, one lowercase letter, and one special-case character.</p>
+            Male<input type="radio" id="gender" name="gender" value="male">Female<input type="radio" id="gender" name="gender" value="female">
+            <p class="click-agreement"> By clicking "Register", you agree to our <a class="click-agreement" href="">terms of service</a> and <a class="click-agreement" href="">privacy policy</a>.</p>
             
-            <button class="button2">Create An Account</button>
+            <button class="button2"><a href="users/login.jsp" class="chillonline">Register</a></button>
             
             </div>
             
@@ -436,11 +449,34 @@
     </div>
     <div class="sept2">
         
-        <img src="epic.png" alt="epic" id="epic" width="1000">
-        <form action="" method="post">
-            
-        </form>
+        <img src="image5.jpg" alt="epic" id="epic" height="500">
+        
     </div>
+        
+        <script type="text/javascript">
+  
+            var roller = document.getElementById("epic");
+            var picArray = ["image1.jpg", "image2.jpg", "image3.jpg", "image4.jpg", "image5.jpg"];
+            var index = 0;
+            
+            function slidePic()
+            
+            {
+                roller.setAttribute("src", picArray[index]);
+                index++;
+                
+                if (index == picArray.length)
+                    
+                    {
+                        index = 0;
+                    }
+                    
+            }
+            
+            setInterval(slidePic, 3000);
+  
+        </script>
+        
     </div>
     
     <%!
@@ -542,7 +578,7 @@
   
   
     <div id="container">
-        <div class="copyright"><h2><br>Watch TV and play series, movies, music, videos, and games with other users.</h2>
+        <div class="copyright"><h2><br>Watch TV and play series, movies, music, videos, and games with other clients.</h2>
         <button class="button2">View Plans</button></div>
         <div class="seriediv"></div>
     </div>
@@ -557,7 +593,7 @@
       
     <div class="copyright">
         
-        <div class="footnotes"><h4>User Accounts</h4>
+        <div class="footnotes"><h4>Users</h4>
           <a class="notes" href=""><p>Channels</p></a>
           <a class="notes" href=""><p>Series</p></a>
           <a class="notes" href=""><p>Movies</p></a>
@@ -565,7 +601,7 @@
           <a class="notes" href=""><p>Music</p></a>
           <a class="notes" href=""><p>Games</p></a>
         </div>
-      <div class="footnotes"><h4>Distributor Accounts</h4>
+      <div class="footnotes"><h4>Distributors</h4>
           <a class="notes" href=""><p>Channels</p></a>
           <a class="notes" href=""><p>Series</p></a>
           <a class="notes" href=""><p>Movies</p></a>
@@ -581,8 +617,8 @@
           <a class="notes" href=""><p>Licenses</p></a>
       </div>
       <div class="footnotes"><h4>About</h4>
-          <a class="notes" href=""><p>Early years</p></a>
-          <a class="notes" href=""><p>Founders</p></a>
+          <a class="notes" href=""><p>Founder</p></a>
+          <a class="notes" href=""><p>Investors</p></a>
           <a class="notes" href=""><p>Mission</p></a>
           <a class="notes" href=""><p>Vendors</p></a>
       </div>
@@ -593,7 +629,7 @@
           <a class="notes" href=""><p>Email</p></a>
       </div>
         <hr>
-        <p>&copy; 2016 Chill Technologies. All Rights Reserved.</p></div>
+        <p>&copy; 2016 Chill Technologies Inc. All Rights Reserved.</p></div>
     
     
   </footer>
