@@ -19,7 +19,7 @@ int main(int argc, const char * argv[]) {
     Queue* channeltest = new Queue();
     
     
-    channeltest->enter(11);
+    channeltest->enter(1);
     channeltest->enter(2);
     channeltest->enter(3);
     channeltest->enter(4);
@@ -38,21 +38,23 @@ int main(int argc, const char * argv[]) {
     channeltest->enter(17);
     channeltest->enter(18);
     
-    /*
-    cout << channeltest->leave() << endl;
-    cout << channeltest->leave() << endl;
-    cout << channeltest->leave() << endl;
-    cout << channeltest->leave() << endl;
-    cout << channeltest->leave() << endl;
-    cout << channeltest->leave() << endl;
-    cout << channeltest->leave() << endl;
-    cout << channeltest->leave() << endl;
-    cout << channeltest->leave() << endl;
-    cout << channeltest->leave() << endl;
-    cout << channeltest->leave() << endl;
-    cout << channeltest->leave() << endl;
-    */
+    channeltest->check();
+    cout << endl;
     
+    cout << channeltest->leave() << endl;
+    cout << channeltest->leave() << endl;
+    cout << channeltest->leave() << endl;
+    cout << channeltest->leave() << endl;
+    cout << channeltest->leave() << endl;
+    cout << channeltest->leave() << endl;
+    cout << channeltest->leave() << endl;
+    cout << channeltest->leave() << endl;
+    cout << channeltest->leave() << endl;
+    cout << channeltest->leave() << endl;
+    cout << channeltest->leave() << endl;
+    cout << channeltest->leave() << endl;
+    
+    cout << endl;
     channeltest->check();
     
     return 0;

@@ -56,10 +56,9 @@ void Queue::enter(int packetID)
         
     {
         
-        newNode = new Node(packetID, NULL);
-        newNode->setNextNode(lastNode->getNextNode());
+        newNode = new Node(packetID, lastNode->getNextNode());
         lastNode->setNextNode(newNode);
-        lastNode = newNode;
+        lastNode = lastNode->getNextNode();
         
     }
     
@@ -100,13 +99,13 @@ void Queue::check()
     Node* currentNode = lastNode->getNextNode();
     
     cout << currentNode->getID() << endl;
+    currentNode = currentNode->getNextNode();
     
     while (currentNode != lastNode->getNextNode())
         
     {
-        
-        currentNode = currentNode->getNextNode();
         cout << currentNode->getID() << endl;
+        currentNode = currentNode->getNextNode();
         
     }
     
