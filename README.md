@@ -18,9 +18,11 @@ This code is a blueprint for a media streaming and social networking service tha
 
 # Server Software
 
-1. Apache Tomcat
-2. MySQL / MariaDB
-3. Java 8 SDK 
+1. Linux
+2. Apache Tomcat
+3. MySQL / MariaDB
+4. Java 8 SDK 
+5. Amazon EC2 / Cloudfront / Route 53
 
 
 # IDE
@@ -31,7 +33,6 @@ This code is a blueprint for a media streaming and social networking service tha
 
 1. Google Chrome (latest version)
 2. Pepper 47 (Post-Stable, Stable, Beta, Canary)
-3. Amazon EC2 / Cloudfront / Route 53
 
 
 # Domain
