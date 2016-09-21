@@ -1,8 +1,8 @@
 
 
-# ChillOnline
+# Chillonline
 
-A media streaming web service for chatting with friends and accessing multimedia streaming with Pepper via Portable Native Client (pNaCl) modules.
+This code is a blueprint for a media streaming and social networking service that works with the Pepper interface via Portable Native Client (pNaCl) modules.
 
 
 # Languages
