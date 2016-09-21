@@ -8,6 +8,8 @@ A media streaming web service for chatting with friends and accessing multimedia
 # Languages
 
 1. Java Server Pages (JSP)
+2. HTML
+3. CSS
 2. JavaScript
 3. C++
 4. Pepper Plugin API (PPAPI)
