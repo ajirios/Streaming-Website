@@ -12,8 +12,6 @@ A media streaming web service for chatting with friends and accessing multimedia
 3. C++
 4. Pepper Plugin API (PPAPI)
 5. Makefile
-6. AJAX
-7. XML
 
 
 # Server Software
