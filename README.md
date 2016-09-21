@@ -24,14 +24,14 @@ A media streaming web service for chatting with friends and accessing multimedia
 
 
 # IDE
-1. NetBeans
+1. NetBeans 8.1
 
 
 # Dependencies
 
 1. Google Chrome (latest version)
 2. Pepper 47 (Post-Stable, Stable, Beta, Canary)
-3. Amazon EC2
+3. Amazon EC2 / Cloudfront / Route 53
 
 
 # Domain
