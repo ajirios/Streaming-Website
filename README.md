@@ -53,6 +53,25 @@ http://chillonline.net
 
 # Setting Up Your Environment: Windows or OS X
 
+## 1. Installing the Java Development Kit 1.8
+
+
+
+## 2. Installing the MySQL Database 5.7
+
+
+
+## 1. Installing the MySQL Workbench
+
+
+
+## 1. Installing the Apache Tomcat 8
+
+
+
+## 1. Installing the NetBeans 8.1 Full Package
+
+
 
 
 
