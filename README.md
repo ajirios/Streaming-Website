@@ -5,7 +5,8 @@
 This code is a development pre-alpha release of a multimedia streaming and social networking service.
 
 
-# Languages
+
+### Languages
 
 1. Java
 2. Java Server Pages (JSP)
@@ -16,7 +17,8 @@ This code is a development pre-alpha release of a multimedia streaming and socia
 7. jQuery
 
 
-# Installation Software
+
+### Installation Software
 
 1. MySQL 5.7 / MariaDB
 2. MySQL Workbench
@@ -24,7 +26,8 @@ This code is a development pre-alpha release of a multimedia streaming and socia
 4. NetBeans 8.1 (Full Installation)
 
 
-# Libraries
+
+### Libraries
 1. Apache Tomcat 8.0.33
 2. Apache Commons I/O Jar 2.5
 3. Apache Commons I/O Javadoc Jar
@@ -33,20 +36,22 @@ This code is a development pre-alpha release of a multimedia streaming and socia
 1. MySQL Connector Jar 5.1.38
 
 
-# Dependencies
+
+### Dependencies
 
 1. Google Chrome (latest version) - Delta release and later release versions only.
 2. Pepper 47 (Post-Stable, Stable, Beta, Canary) - Delta release and later release versions only.
 3. Amazon EC2 / Cloudfront / Glacier / Route 53
 
 
-# Domain
+
+### Domain
 
 http://chillonline.net
 
 
 
-### Setting Up Your Environment: Windows or OS X
+# Setting Up Your Environment: Windows or OS X
 
 
 
