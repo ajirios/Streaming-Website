@@ -2,37 +2,42 @@
 
 # Chillonline
 
-This code is a blueprint for a media streaming and social networking service that works with the Pepper interface via Portable Native Client (pNaCl) modules.
+This code is a development pre-alpha release of a multimedia streaming and social networking service.
 
 
 # Languages
 
-1. Java Server Pages (JSP)
-2. HTML
-3. CSS
-2. JavaScript
-3. C++
-4. Pepper Plugin API (PPAPI)
-5. Makefile
+1. Java
+2. Java Server Pages (JSP)
+3. SQL
+4. HTML
+5. CSS
+6. JavaScript
+7. jQuery
 
 
-# Server Software
+# Installation Software
 
-1. Linux
-2. Apache Tomcat
-3. MySQL / MariaDB
-4. Java 8 SDK 
-5. Amazon EC2 / Cloudfront / Route 53
+1. MySQL 5.7 / MariaDB
+2. MySQL Workbench
+3. Java 8 SDK 
+4. NetBeans 8.1 (Full Installation)
 
 
-# IDE
-1. NetBeans 8.1
+# Libraries
+1. Apache Tomcat 8.0.33
+2. Apache Commons I/O Jar 2.5
+3. Apache Commons I/O Javadoc Jar
+4. Apache Commons FileUpload Jar 1.3.2
+5. JDK 1.8
+1. MySQL Connector Jar 5.1.38
 
 
 # Dependencies
 
-1. Google Chrome (latest version)
-2. Pepper 47 (Post-Stable, Stable, Beta, Canary)
+1. Google Chrome (latest version) - Delta release and later release versions only.
+2. Pepper 47 (Post-Stable, Stable, Beta, Canary) - Delta release and later release versions only.
+3. Amazon EC2 / Cloudfront / Glacier / Route 53
 
 
 # Domain
@@ -41,8 +46,8 @@ http://chillonline.net
 
 
 
-# Compilation and Execution
+### Setting Up Your Environment: Windows or OS X
 
-To compile and run this test bundle, download and install the server software on your Windows or Mac computer. Download and install the IDE. Import the project into the IDE, setup environment, and run the project. The project should then run on your Chrome web browser.
+
 
 
