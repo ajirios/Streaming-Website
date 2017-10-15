@@ -5,10 +5,6 @@
 This code is a development pre-alpha release of a multimedia streaming and social networking service.
 
 
-### Copyright
-Copyright © 2017. Chill Technologies Inc.
-No part of this work may be copied, shared, distributed, or reworked for any purpose whatsover without the prior written consent of Chill Technologies Inc. 
-
 
 ### Languages
 
