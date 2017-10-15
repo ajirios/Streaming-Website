@@ -2,7 +2,7 @@
 
 # Chillonline
 
-This code is a beta release of an online work, learning, and relaxation platform.
+This code is a beta release of an online work, learning, and relaxation social networking platform.
 
 
 
