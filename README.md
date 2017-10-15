@@ -2,26 +2,29 @@
 
 # Chillonline
 
-This code is a development pre-alpha release of a multimedia streaming and social networking service.
+This code is a beta release of an online work, learning, and relaxation platform.
 
 
 
 ### Languages
 
 1. Java
-2. Java Server Pages (JSP)
+2. JSP
 3. SQL
-4. HTML
-5. CSS
+4. HTML5
+5. CSS3
 6. JavaScript
 7. jQuery
+8. AJAX
+9. XML
+10. JSON
 
 
 
 ### Installation Software
 
 1. MySQL 5.7 (alternatively MariaDB)
-2. MySQL Workbench
+2. MySQL Workbench 6.3
 3. Java 8 SDK 
 4. Apache Tomcat 8
 5. NetBeans 8.1 (Full Installation)
@@ -38,39 +41,11 @@ This code is a development pre-alpha release of a multimedia streaming and socia
 
 
 
-### Dependencies
-
-1. Google Chrome - Delta release and later release versions only.
-2. Pepper 47 (Post-Stable, Stable, Beta, Canary) - Delta release and later release versions only.
-3. Amazon EC2 / Cloudfront / Glacier / Route 53
-
-
 
 ### Domain
 
 http://chillonline.net
 
-
-
-# Setting Up Your Environment: Windows or OS X
-
-## 1. Installing the Java Development Kit 1.8
-
-
-
-## 2. Installing the MySQL Database 5.7
-
-
-
-## 3. Installing the MySQL Workbench
-
-
-
-## 4. Installing the Apache Tomcat 8
-
-
-
-## 5. Installing the NetBeans 8.1 Full Package
 
 
 
